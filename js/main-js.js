@@ -5,8 +5,15 @@ $(document).ready(function() {
         $('#menu-dropDown').toggleClass('rotate');
    });
   
-    $('#search>img').click(function() {
-        $('#search>input').toggleClass('open-input');  
+    $('#search>button').click(function() {
+        $('#search>input').addClass('open-input');  
+    });
+
+    $(document).mouseup(function (e) {
+        var popup = $("#search>input");
+        if (!$('#search>button').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+            popup.removeClass('open-input');
+        }
     });
 
     $('.btn-menu').click(function() {
