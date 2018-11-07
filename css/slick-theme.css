@@ -93,13 +93,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 40px;
 
     display: block;
 
@@ -165,10 +165,14 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '';
     text-align: center;
+    background-image: url(../icons/dots-slider.svg);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 10px;
 
-    opacity: .25;
+    opacity: 1;
     color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -176,6 +180,5 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    background-image: url(../icons/dots-slider-active.svg);
 }
