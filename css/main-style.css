@@ -398,6 +398,18 @@ body {
   padding: 10px 0;
 }
 
+.slider-flash-memory {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+
+.goods {
+  width: 280px;
+  border: 1px solid #EBEBEB;
+  background-color: #fff;
+  display: block;
+}
 
 
 @media only screen and (max-width: 1300px) {
