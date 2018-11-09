@@ -267,7 +267,7 @@ body {
   display: none;
 }
 
-#search > img {
+#search > button {
   width: 16px;
   height: 18px;
   position: absolute;
@@ -275,6 +275,7 @@ body {
   margin-top: -9px;
   right: 114px;
   cursor: pointer;
+  background: transparent;
 }
 
 #search input {
@@ -397,6 +398,18 @@ body {
   padding: 10px 0;
 }
 
+.slider-flash-memory {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+
+.goods {
+  width: 280px;
+  border: 1px solid #EBEBEB;
+  background-color: #fff;
+  display: block;
+}
 
 
 @media only screen and (max-width: 1300px) {
@@ -445,7 +458,7 @@ body {
     padding: 8px;
   }
 
-  #search > img {
+  #search > button {
     right: 98px;
   }
 
@@ -512,7 +525,7 @@ body {
     padding: 6px;
   }
 
-  #search > img {
+  #search > button {
     right: 80px;
     width: 16px;
     height: 14px;
@@ -750,7 +763,7 @@ body {
     width: 100%;
   }
 
-  #search > img {
+  #search > button {
     right: 20px;
     width: 16px;
     height: 17px;
