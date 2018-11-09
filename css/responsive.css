@@ -1,0 +1,113 @@
+@media(max-width:1367.8px) {
+    .event-slider .slick-next.slick-arrow {
+        right: -60px;
+    }
+    .event-slider .slick-prev.slick-arrow {
+        left: -60px;
+    }
+}
+
+@media(max-width:1300.8px) {
+    .catalog-topsect h1 {
+        font-size: 24px;
+    }
+    .order-leftblock .title {
+        font-size: 16px;
+    }
+    .order-leftblock .descr {
+        margin-bottom: 20px;
+    }
+    .product-block .toppic-block {
+        height: 170px;
+    }
+    .product-block .inf-block {
+        padding: 10px 10px 0 10px;
+    }
+    .product-block .price {
+        font-size: 20px;
+    }
+    .event-block .bottinf-block p.descr {
+        height: 110px;
+    }
+}
+
+@media(max-width:1200.8px) {
+    .event-slider .slick-arrow {
+        background-color: rgb(238, 238, 238);
+        z-index: 99;
+        top: 37%;
+    }
+    .event-slider .slick-next.slick-arrow {
+        right: 0px;
+    }
+    .event-slider .slick-prev.slick-arrow {
+        left: 0px;
+    }
+}
+@media(max-width:991.8px) {
+    .breadcrumbs {
+        margin: 20px 0 20px 0;
+    }
+    .catalog-topsect h1 {
+        font-size: 20px;
+    }
+    .catalog-topsect .sort-filter span {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    #catalog-topfilter-styler {
+        margin-right: 15px;
+    }
+    #catalog-topfilter-styler .jq-selectbox__select {
+        width: 155px;
+    }
+    .catalog-topsect .col-md-6 {
+        align-self: center;
+    }
+    .event-section h2 {
+        font-size: 20px;
+    }
+    .show-more {
+        margin-top: 20px;
+    }
+    .catalog-products {
+        padding-bottom: 40px;
+    }
+    .event-section {
+        padding: 50px 0;
+    }
+}
+@media(max-width:767.8px) {
+    .color-filter, .extent {
+        display: none;
+    }
+    .left-filt .title {
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .left-filt.link-products, .order-leftblock {
+        display: none;
+    }
+    .catalog-topsect h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .catgrid-links {
+        display: none;
+    }
+    .product-block .inf-block {
+        padding: 20px 20px 0 20px;
+    }
+    .event-block .toppic-block>img {
+        width: 100%;
+    }
+    .event-block .toppic-block, .event-block .bottinf-block p.descr {
+        height: auto;
+    }
+    .event-slider .slick-arrow {
+        width: 44px;
+        height: 44px;
+    }
+    .catalog-products .relative {
+        height: 344px;
+    }
+}

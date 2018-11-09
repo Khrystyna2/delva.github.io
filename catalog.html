@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Дельва - Каталог</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style slick -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- style inputs and selext -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/main-style-2.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-sm-4 col-md-2">
+                    <a href="index.html" class="logo">
+                        <img src="image/logo.svg" alt="Дельва">
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 offset-lg-1 col-xl-2 offset-xl-2 d-none d-md-block">
+                    <div class="us-email">
+                        <span>delva.workshop@ukr.net</span>
+                        <a href="#"><span>Ми в</span> Instagram</a>
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="phone">
+                        <a href="tel: +38 (098) 534-33-22">+38 (098) 534-33-22</a>
+                        <a href="#" class="callback">Зворотній дзвінок</a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-8 col-md-4 col-lg-3">
+                    <div class="group-icon d-flex justify-content-end align-items-center">
+                        <a href="#" class="user d-flex align-items-center">
+                            <span>Вхід</span>
+                            <img src="icons/user.svg" alt="user">
+                        </a>
+                        <a href="#" class="liked-goods">
+                            <img src="icons/heart.svg" alt="heart">
+                        </a>
+                        <a href="#" id="basket">
+                            <span id="counter" class="d-flex align-items-center justify-content-center">2</span>
+                            <img src="icons/shopping-basket.svg" alt="basket">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-menu d-flex justify-content-between align-items-center">
+                            <div class="btn-menu">
+                                <img src="icons/menu.svg" alt="menu">
+                            </div>
+                            <nav class="menu">
+                                <div class="btn-close">
+                                    <img src="icons/close.svg" alt="close">
+                                </div>
+                                <ul class="d-flex">
+                                    <li id="menu-dropDown">
+                                        <div><img src="icons/menu.svg" alt="menu">товари</div>
+                                        <ul class="hide-list">
+                                            <li><a href="#">Флеш-память</a></li>
+                                            <li><a href="#">Футляри</a></li>
+                                            <li><a href="#">Шкатулки</a></li>
+                                            <li><a href="#">Флеш-память</a></li>
+                                            <li><a href="#">Футляри</a></li>
+                                            <li><a href="#">Шкатулки</a></li>
+                                            <li><a href="#">Власне гравіювання <img src="icons/art.svg" alt=""></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Конструктор</a></li>
+                                    <li><a href="#">Доставка і оплата</a></li>
+                                    <li><a href="#">Новини</a></li>
+                                    <li><a href="#">Контакти</a></li>
+                                    <!-- this for mobil screen -->
+                                    <div id="phoneMob" class="phone">
+                                        <a href="tel: +38 (098) 534-33-22">+38 (098) 534-33-22</a>
+                                        <a href="#" class="callback">Зворотній дзвінок</a>
+                                    </div>
+                                    <div id="our-emailMob" class="us-email">
+                                        <span>delva.workshop@ukr.net</span>
+                                        <a href="#"><span>Ми в</span> Instagram</a>
+                                    </div>
+                                    <div id="languageMob" class="language">
+                                        <a href="#">Укр</a>
+                                        <a href="#">Рус</a>
+                                    </div>
+                                    <a href="#" id="own-design">Власне гравіювання <img src="icons/art.svg" alt=""></a>
+                                </ul>
+                            </nav>
+                            <div id="search">
+                                <input type="search" placeholder="Пошук ...">
+                                <img src="icons/search.svg" alt="search">
+                            </div>
+                            <div class="language">
+                                <a href="#">Укр</a>
+                                <a href="#">Рус</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li>Флеш-память</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+
+        <div class="container">
+            <div class="catalog-topsect">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>ФЛЕШ-ПАМЯТЬ</h1>
+                    </div>
+                    <div class="col-md-6 text-md-right text-sm-left">
+                        <div class="sort-filter">
+                            <span>Сортувати за:</span>
+                            <select name="" id="catalog-topfilter" class="text-left">
+                                <option value="0">Популярністю</option>
+                                <option value="1">Ціною</option>
+                                <option value="2">Алфавіту</option>
+                            </select>
+                            <div class="catgrid-links">
+                                <span class="row-gr"></span>
+                                <span class="table-gr active"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <aside class="left-sidebar">
+                            <div class="left-filt">
+                                <p class="title">КОЛІР</p>
+                                <ul class="color-filter">
+                                    <li>
+                                        <label for="color1">
+                                            <input type="radio" id="color1" name="color">
+                                            <span class="color-point black"></span>
+                                            <span>Чорний</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="color2">
+                                            <input type="radio" id="color2" name="color">
+                                            <span class="color-point white"></span>
+                                            <span>Білий</span>
+                                        </label>
+                                    </li>
+                                    <li><label for="color3">
+                                            <input type="radio" id="color3" name="color">
+                                            <span class="color-point tree-color"></span>
+                                            <span>Дерево</span>
+                                        </label></li>
+                                    <li><label for="color4">
+                                            <input type="radio" id="color4" name="color">
+                                            <span class="color-point blue"></span>
+                                            <span>Синій</span>
+                                        </label></li>
+                                    <li><label for="color5">
+                                            <input type="radio" id="color5" name="color">
+                                            <span class="color-point yellow"></span>
+                                            <span>Жовтий</span>
+                                        </label></li>
+                                </ul>
+                                <p class="title">Об'єм</p>
+                                <ul class="extent">
+                                    <li>
+                                        <label for="extent1">
+                                            <input type="radio" id="extent1" name="extent">
+                                            <span>8 Гб</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="extent2">
+                                            <input type="radio" id="extent2" name="extent">
+                                            <span>16 Гб</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="extent3">
+                                            <input type="radio" id="extent3" name="extent">
+                                            <span>32 Гб</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="extent4">
+                                            <input type="radio" id="extent4" name="extent">
+                                            <span>64 Гб</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="left-filt link-products">
+                                <ul>
+                                    <li><a href="#">Футляри</a></li>
+                                    <li><a href="#">Шкатулки</a></li>
+                                </ul>
+                            </div>
+                            <div class="order-leftblock">
+                                <p class="title">Не знайшли товар по власним критеріям?</p>
+                                <p class="descr">Замовте унікальний стиль у нашого дизайнера, він залюбки реалізує всі
+                                    ваші побажання</p>
+                                <a href="#">ЗАМОВИТИ</a>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="catalog-products">
+                            <div class="row no-gutters relcol">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="relative">
+                                        <div class="product-block">
+                                            <div class="toppic-block">
+                                                <img src="image/new-pic/product-pic.png" alt="">
+                                            </div>
+                                            <div class="inf-block">
+                                                <p class="title">Деревяна флешка на 8 Гб</p>
+                                                <p class="descr">
+                                                    Виготовленая з червогоно дуба та кращого виробника флеш-памяті
+                                                </p>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-6 col-6">
+                                                        <p class="price">260 <span>грн</span></p>
+                                                    </div>
+                                                    <div class="col-md-6 col-6"><a href="#" class="details">Детальніше</a></div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Придбати в 1 клік</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="show-more text-center">
+                                    <a href="#">показати ще</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-section">
+            <div class="container">
+                <h2>не пропусіть важливих подій та акцій. <br>БУДьТЕ З НАМИ В СОЦІЛЬНИХ МЕРЕЖАХ!</h2>
+                <div class="event-slider">
+                    <div class="event-slide">
+                        <div class="event-block">
+                            <div class="toppic-block">
+                                <img src="image/new-pic/eventslide1.png" alt="">
+                                <a href="#" class="slide-soclink"><img src="image/new-pic/fb-icon.png" alt=""></a>
+                            </div>
+                            <div class="bottinf-block">
+                                <p class="title">Безкоштовне гравіювання</p>
+                                <p class="descr">
+                                    Завдяки старанням нашого обслуговуючого інженера ми маємо можливість потішити вас
+                                    неймовірною якістю гравіювання. Ще більше деталей відображених в деревині!!!
+                                </p>
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <div class="slide-redmore"><a href="#">Читати далі</a></div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <span class="date-publicate">02.10.2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-slide">
+                        <div class="event-block">
+                            <div class="toppic-block">
+                                <img src="image/new-pic/eventslide2.png" alt="">
+                                <a href="#" class="slide-soclink"><img src="image/new-pic/fb-icon.png" alt=""></a>
+                            </div>
+                            <div class="bottinf-block">
+                                <p class="title">Додаємо кольорів</p>
+                                <p class="descr">
+                                    Флешки в кольорі палісандр доступні для покупки 😊 Об'єм від 8 до 32 Гб. Неймовірно
+                                    привабливі ціни. На додачу ще й наносимо гравіювання. І кожну з радістю упакуємо в
+                                    футлярчик або коробочку ;)
+                                </p>
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <div class="slide-redmore"><a href="#">Читати далі</a></div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <span class="date-publicate">02.10.2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-slide">
+                        <div class="event-block">
+                            <div class="toppic-block">
+                                <img src="image/new-pic/eventslide3.png" alt="">
+                                <a href="#" class="slide-soclink"><img src="image/new-pic/inst-icon.png" alt=""></a>
+                            </div>
+                            <div class="bottinf-block">
+                                <p class="title">Поповнення асортименту!</p>
+                                <p class="descr">
+                                    ❗️❗️Нарешті довгоочікувані флешки на 32 Гб 😊 по ціні, всього-навсього 230 грн. А
+                                    за додаткових 10 грн із задоволенням нанесемо індивідуальне гравіювання 😊
+                                </p>
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <div class="slide-redmore"><a href="#">Читати далі</a></div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <span class="date-publicate">02.10.2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-slide">
+                        <div class="event-block">
+                            <div class="toppic-block">
+                                <img src="image/new-pic/eventslide2.png" alt="">
+                                <a href="#" class="slide-soclink"><img src="image/new-pic/fb-icon.png" alt=""></a>
+                            </div>
+                            <div class="bottinf-block">
+                                <p class="title">Додаємо кольорів</p>
+                                <p class="descr">
+                                    Флешки в кольорі палісандр доступні для покупки 😊 Об'єм від 8 до 32 Гб. Неймовірно
+                                    привабливі ціни. На додачу ще й наносимо гравіювання. І кожну з радістю упакуємо в
+                                    футлярчик або коробочку ;)
+                                </p>
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <div class="slide-redmore"><a href="#">Читати далі</a></div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <span class="date-publicate">02.10.2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-more text-center">
+                    <a href="#">Переглянути всі новини</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="topfooter-sect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left-footblock">
+                            <a href="index.html" class="foot-logo"><img src="image/logo.svg" alt=""></a>
+                            <p>
+                                Завдяки старанням нашого обслуговуючого інженера ми маємо можливість потішити вас
+                                неймовірною якістю гравіювання. Ще більше деталей відображених в деревині!!!
+                                Переконайтесь
+                                в цьому замовивши та оплативши продукцію до 7 вересня включно ...
+                            </p>
+                            <div class="foot-social">
+                                <a href="#"><img src="image/new-pic/footpic1.png" alt=""></a>
+                                <a href="#"><img src="image/new-pic/footpic2.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="foot-sitemap">
+                            <p class="title">КАРТА САЙТУ</p>
+                            <ul>
+                                <li><a href="#">Головна</a></li>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Доставка і оплата</a></li>
+                                <li><a href="#">Новини</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="foot-contact">
+                            <p class="title">КАРТА САЙТУ</p>
+                            <ul>
+                                <li>м. Коломиї, вулиця Миру 47, офіс 3</li>
+                                <li><a href="tel:+380985343322">+38 (098) 534-33-22</a></li>
+                                <li><a href="mailto:delva.workshop@ukr.net">delva.workshop@ukr.net</a></li>
+                            </ul>
+                            <div class="foot-soc">
+                                <a href="#"><img src="image/new-pic/inst-icon-foot.png" alt=""></a>
+                                <a href="#"><img src="image/new-pic/fb-icon-foot.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="bottfooter-sect">
+                    <div class="col-md-4"><span>© Дельва. 2008-2018. Всі права захищені</span></div>
+                    <div class="col-md-8">
+                        <span><a href="#">Гарантії та повернення</a></span>
+                        <span><a href="#">Політика конфіденційності</a></span>
+                        <span>Розроблено студією <a href="#">FlyFox</a></span>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main-js.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
