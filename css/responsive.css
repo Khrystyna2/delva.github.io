@@ -29,6 +29,19 @@
     .event-block .bottinf-block p.descr {
         height: 110px;
     }
+    .catalog-products.rowproducts .product-block .toppic-block {
+        width: 200px;
+    }
+    .catalog-products.rowproducts .product-block .inf-block {
+        width: calc(100% - 205px);
+    }
+    .prod-like {
+        top: 10px;
+        right: 10px;
+    }
+    .catalog-products.rowproducts .product-block .inf-block {
+        padding-top: 10px;
+    }
 }
 
 @media(max-width:1200.8px) {
@@ -44,7 +57,11 @@
         left: 0px;
     }
 }
+
 @media(max-width:991.8px) {
+    .catgrid-links {
+        display: none;
+    }
     .breadcrumbs {
         margin: 20px 0 20px 0;
     }
@@ -76,15 +93,21 @@
     .event-section {
         padding: 50px 0;
     }
+    footer .foot-sitemap {
+        margin-left: 0;
+    }
 }
+
 @media(max-width:767.8px) {
-    .color-filter, .extent {
+    .color-filter,
+    .extent {
         display: none;
     }
     .left-filt .title {
         border-bottom: 1px solid #e3e3e3;
     }
-    .left-filt.link-products, .order-leftblock {
+    .left-filt.link-products,
+    .order-leftblock {
         display: none;
     }
     .catalog-topsect h1 {
@@ -100,7 +123,8 @@
     .event-block .toppic-block>img {
         width: 100%;
     }
-    .event-block .toppic-block, .event-block .bottinf-block p.descr {
+    .event-block .toppic-block,
+    .event-block .bottinf-block p.descr {
         height: auto;
     }
     .event-slider .slick-arrow {
@@ -109,5 +133,120 @@
     }
     .catalog-products .relative {
         height: 344px;
+    }
+    footer .left-footblock {
+        text-align: center;
+    }
+    footer .left-footblock>p {
+        max-width: 100%;
+    }
+    footer .foot-social {
+        margin-bottom: 20px;
+    }
+    footer .bottfooter-sect {
+        display: block;
+        align-items: initial;
+        padding-top: 10px;
+        height: auto;
+    }
+    footer .bottfooter-sect span {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .bottfooter-sect .col-md-8 {
+        display: block;
+    }
+    footer .foot-sitemap,
+    footer .foot-contact {
+        text-align: center;
+    }
+    footer .foot-sitemap ul li {
+        background-image: none;
+        padding-left: 0;
+    }
+    footer .foot-soc a:last-child {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    footer .left-footblock {
+        text-align: left;
+    }
+    .foot-social {
+        display: none;
+    }
+    footer .left-footblock>p {
+        margin-bottom: 30px;
+    }
+    footer .foot-sitemap,
+    footer .foot-contact {
+        text-align: left;
+    }
+    footer .foot-sitemap p.title {
+        margin-bottom: 0;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #C4C4C4;
+        padding-left: 18px;
+    }
+    footer .foot-sitemap ul li {
+        border-bottom: 1px solid #C4C4C4;
+        padding-left: 18px;
+        background-image: url(../image/new-pic/point.png);
+        background-repeat: no-repeat;
+        background-position: 90% center;
+    }
+    .foot-sitemap p.title {
+        position: relative;
+    }
+    .foot-sitemap p.title img {
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top: 7px;
+        transform: rotate(180deg);
+    }
+    footer .foot-sitemap p.title.rotatepic img {
+        transform: rotate(0deg);
+    }
+    footer .foot-contact {
+        margin-top: 30px;
+    }
+    footer .foot-contact ul {
+        margin-bottom: 15px;
+    }
+    .topfooter-sect {
+        margin-bottom: 20px;
+    }
+    .showphone.foot-social {
+        display: inline-block;
+        padding: 0 15px;
+    }
+    .foot-social {
+        margin-top: 15px;
+    }
+    .foot-social a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .phone-hide {
+        display: none !important;
+    }
+    footer .bottfooter-sect span {
+        text-align: left;
+    }
+    footer .phone-show {
+        display: block !important;
+    }
+    footer .bottfooter-sect span.phone-show a {
+        text-decoration: underline;
+    }
+    .showphone, .phone-show {
+        display: block !important;
     }
 }
