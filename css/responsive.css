@@ -26,6 +26,9 @@
 }
 
 @media(max-width:1300.8px) {
+    .event-block .bottinf-block p.descr {
+        overflow: hidden;
+    }
     .card-bottsection .text-block p {
         font-size: 16px;
     }
@@ -69,6 +72,7 @@
 }
 
 @media(max-width:1200.8px) {
+    
     .bottpr-slide.slick-center .picblock-prslider, .picblock-prslider {
         height: 200px;
         width: 200px;
@@ -94,6 +98,9 @@
 }
 
 @media(max-width:991.8px) {
+    .new-section {
+        margin-bottom: 40px;
+    }
     .table-scroll {
         overflow-x: scroll;
     }
@@ -197,6 +204,9 @@
     }
 }
 @media(max-width:767.8px) {
+    .event-block .bottinf-block {
+        padding-bottom: 20px;
+    }
     .order-processing .continue-shopping,
     .order-processing input[type="submit"] {
         font-size: 14px;
