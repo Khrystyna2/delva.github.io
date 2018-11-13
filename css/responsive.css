@@ -8,6 +8,12 @@
 }
 
 @media(max-width:1300.8px) {
+    .card-bottsection .text-block p {
+        font-size: 16px;
+    }
+    .bottom-prslider-section h2 {
+        font-size: 22px;
+    }
     .catalog-topsect h1 {
         font-size: 24px;
     }
@@ -45,6 +51,17 @@
 }
 
 @media(max-width:1200.8px) {
+    .bottpr-slide.slick-center .picblock-prslider, .picblock-prslider {
+        height: 200px;
+        width: 200px;
+    }
+    .bottom-prslider {
+        max-width: 750px;
+    }
+    .bottpr-slide.slick-center .picblock-prslider img,
+    .bottpr-slide .picblock-prslider img {
+        max-width: 120px;
+    }
     .event-slider .slick-arrow {
         background-color: rgb(238, 238, 238);
         z-index: 99;
@@ -59,6 +76,50 @@
 }
 
 @media(max-width:991.8px) {
+    .product-descr .bott-block {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .bottom-prslider-section h2 {
+        font-size: 18px;
+    }
+    .product-descr .bottlink {
+        font-size: 14px;
+    }
+    .prpriceright p {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    .right-prinfo .title {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .right-prinfo .model {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .product-descr .right-descr .jq-selectbox.jqselect {
+        margin-bottom: 10px;
+    }
+    .product-descr>p, .product-descr .left-descr p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .card-topsection form {
+        padding-right: 0px;
+    }
+    .product-descr .left-descr {
+        width: 100%;
+    }
+    .slidersect-pr {
+        padding-right: 0px;
+    }
+    .card-slider {
+        height: auto;
+    }
+    .card-slide img {
+        max-width:250px;
+    }
     .catgrid-links {
         display: none;
     }
@@ -97,8 +158,38 @@
         margin-left: 0;
     }
 }
-
+@media(max-width:950px) {
+    .bottom-prslider {
+        max-width: 600px;
+    }
+}
 @media(max-width:767.8px) {
+    .card-bottsection .text-block p {
+        font-size: 14px;
+    }
+    .slidersect-pr {
+        margin-bottom: 20px;
+    }
+    .card-slide img {
+        padding: 25px;
+        max-height: 240px;
+    }
+    .card-slide {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .card-slider .bottom-prslider {
+        max-width: 100%;
+    }
+    .slick-dots {
+        bottom: 20px;
+    }
+    .bottom-prslider .slick-prev.slick-arrow {
+        left: 0;
+    }
+    .bottom-prslider .slick-next.slick-arrow {
+        right: 0;
+    }
     .color-filter,
     .extent {
         display: none;
@@ -248,5 +339,25 @@
     }
     .showphone, .phone-show {
         display: block !important;
+    }
+    .right-prinfo .title {
+        font-size: 18px;
+    }
+    .card-bottsection .text-block {
+        padding-top: 20px;
+    }
+    .card-bottsection .text-block p {
+        margin-bottom: 30px;
+    }
+    .event-slider .slick-arrow, .bottom-prslider .slick-arrow {
+        width: 44px;
+        height: 44px;
+        z-index: 99;
+    }
+    .bottom-prslider .slick-next.slick-arrow {
+        right: -20px;
+    }
+    .bottom-prslider .slick-prev.slick-arrow {
+        left: -20px;
     }
 }
