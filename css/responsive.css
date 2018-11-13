@@ -2,7 +2,7 @@
     .card-bottsection .text-block p {
         font-size: 16px;
     }
-    .abus-topsection h1, .bottom-prslider-section h2, .catalog-topsect h1 {
+    .abus-topsection h1, .bottom-prslider-section h2, .catalog-topsect h1, h1 {
         font-size: 24px;
     }
     .abus-topsection p, .abus-section p {
@@ -94,6 +94,15 @@
 }
 
 @media(max-width:991.8px) {
+    .table-scroll {
+        overflow-x: scroll;
+    }
+    .basket-table {
+        width: 900px;
+    }
+    .order-processing {
+        margin-bottom: 40px;
+    }
     .abus-section {
         margin-bottom: 40px;
     }
@@ -188,6 +197,11 @@
     }
 }
 @media(max-width:767.8px) {
+    .order-processing .continue-shopping,
+    .order-processing input[type="submit"] {
+        font-size: 14px;
+        max-width: 100%;
+    }
     .abus-toppic {
         max-width: 200px;
         margin-left: 20px;
@@ -290,6 +304,16 @@
 }
 
 @media(max-width:575.8px) {
+    .order-processing .continue-shopping {
+        margin-bottom: 10px;
+    }
+    .order-processing .continue-shopping,
+    .order-processing input[type="submit"] {
+        width: 100%;
+    }
+    .basket-table thead tr th:first-child, .basket-table tbody tr td:first-child {
+        padding-left: 15px;
+    }
     .abus-toppic {
         max-width: 100%;
         margin-left: 0;

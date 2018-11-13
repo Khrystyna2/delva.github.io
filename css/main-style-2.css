@@ -1066,7 +1066,8 @@ footer .foot-contact ul li:nth-child(2) a {
     margin-bottom: 30px;
 }
 
-.product-descr .bott-block .jq-number__field input, .basket-table .jq-number__field input[type="number"] {
+.product-descr .bott-block .jq-number__field input,
+.basket-table .jq-number__field input[type="number"] {
     width: 58px;
     height: 58px;
     background: #FFFFFF;
@@ -1080,13 +1081,15 @@ footer .foot-contact ul li:nth-child(2) a {
     color: #000000;
 }
 
-.product-descr .bott-block .jq-number__field, .basket-table .jq-number__field {
+.product-descr .bott-block .jq-number__field,
+.basket-table .jq-number__field {
     width: 58px;
     border: none;
     box-shadow: none;
 }
 
-.product-descr .bott-block .jq-number, .basket-table .jq-number {
+.product-descr .bott-block .jq-number,
+.basket-table .jq-number {
     padding: 0 29px 0 0;
 }
 
@@ -1304,12 +1307,19 @@ h1 {
 }
 
 /* Korzyna */
+
+.basket-table {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
 .basket-table thead {
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
+
 .basket-table thead tr th {
     font-weight: normal;
     line-height: normal;
@@ -1341,4 +1351,254 @@ h1 {
 .basket-table thead tr th:nth-child(4),
 .basket-table tbody tr td:nth-child(4) {
     width: 15%;
+}
+
+.basket-table .table-price {
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+.basket-table .table-price span {
+    font-size: 14px;
+}
+
+.basket-table tbody tr td {
+    padding: 30px 0;
+}
+
+.basket-table tbody tr {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.basket-table tbody {
+    border: 1px solid #EBEBEB;
+    background: #FCFCFD;
+}
+
+.basket-table .remove-product {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    background-image: url(../image/new-pic/red-close.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.basket-table .remove-product:hover {
+    background-color: #ebebeb;
+}
+
+.basket-table .table-leftblock,
+.basket-table .table-rightblock {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.basket-table .table-leftblock {
+    width: 80px;
+}
+
+.basket-table .table-rightblock {
+    width: calc(100% - 85px);
+    padding-left: 30px;
+}
+
+.basket-table .table-leftblock img {
+    max-width: 74px;
+}
+
+.basket-table .table-rightblock .title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.basket-table .table-rightblock .descr {
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    color: #838383;
+    margin-bottom: 12px;
+}
+
+.basket-table .table-rightblock .color {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.basket-table .table-rightblock .color img {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.basket-table .table-rightblock .prod-pics-sect {}
+
+.basket-table .table-rightblock .prod-pics-sect .prodpics {
+    width: 58px;
+    height: 58px;
+    margin-right: 15px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-bottom: 15px;
+}
+
+.basket-table .table-rightblock .prod-pics-sect .prodpics img {
+    max-width: 43px;
+}
+
+.edit-table {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 15px;
+    text-decoration-line: underline;
+    color: #8A4825;
+}
+
+.edit-table:hover {
+    color: #8A4825;
+    text-decoration: none;
+}
+
+.edit-table img {
+    margin-right: 6px;
+}
+
+.designers-service .despic {
+    width: 71px;
+    height: 71px;
+    background: #F6F3F2;
+    border: 1px solid #EBEBEB;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 39px;
+}
+
+.designers-service .desdesc {
+    display: inline-block;
+}
+
+.designers-service .desdesc p:first-child {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.designers-service .desdesc p:nth-child(2) {
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    color: #838383;
+}
+
+.bottomrow td {
+    padding-right: 22px !important;
+}
+
+.bottomrow .bottomrow-left {
+    width: 142px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+}
+
+.bottomrow .bottomrow-left p:first-child {
+    font-weight: 300;
+    line-height: normal;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 9px;
+}
+
+.bottomrow .bottomrow-left p:nth-child(2) {
+    font-weight: 300;
+    line-height: normal;
+    font-size: 28px;
+    color: #000000;
+}
+
+.bottomrow .bottomrow-right {
+    width: 112px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.bottomrow .bottomrow-right p:first-child {
+    font-weight: bold;
+    line-height: 18px;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+.bottomrow .bottomrow-right p:nth-child(2) {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 28px;
+    color: #000000;
+}
+
+.order-processing {
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
+
+.order-processing .continue-shopping {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 1px;
+    width: 280px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-processing input[type="submit"] {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(110.75deg, #DB9D7E 0%, #A06243 100%);
+    border-radius: 1px;
+    width: 280px;
+    height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor: pointer;
+}
+.order-processing input[type="submit"]:hover {
+    background: #A06243;
 }
