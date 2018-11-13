@@ -1066,7 +1066,7 @@ footer .foot-contact ul li:nth-child(2) a {
     margin-bottom: 30px;
 }
 
-.product-descr .bott-block .jq-number__field input {
+.product-descr .bott-block .jq-number__field input, .basket-table .jq-number__field input[type="number"] {
     width: 58px;
     height: 58px;
     background: #FFFFFF;
@@ -1080,13 +1080,13 @@ footer .foot-contact ul li:nth-child(2) a {
     color: #000000;
 }
 
-.product-descr .bott-block .jq-number__field {
+.product-descr .bott-block .jq-number__field, .basket-table .jq-number__field {
     width: 58px;
     border: none;
     box-shadow: none;
 }
 
-.product-descr .bott-block .jq-number {
+.product-descr .bott-block .jq-number, .basket-table .jq-number {
     padding: 0 29px 0 0;
 }
 
@@ -1206,12 +1206,15 @@ footer .foot-contact ul li:nth-child(2) a {
     text-transform: uppercase;
     color: #797979;
 }
+
 .bottpr-slide p {
     display: none;
 }
+
 .bottpr-slide.slick-center p {
     display: block;
 }
+
 .picblock-prslider {
     width: 250px;
     height: 250px;
@@ -1219,6 +1222,123 @@ footer .foot-contact ul li:nth-child(2) a {
     align-items: center;
     justify-content: center;
 }
+
 .bottom-prslider {
     margin-bottom: 80px;
+}
+
+.product-descr .bottlink img {
+    margin-left: 5px;
+}
+
+.not-available p {
+    font-weight: 300;
+    line-height: normal;
+    font-size: 15px;
+    color: #838383;
+}
+
+.not-available p:first-child {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    color: #8A4825;
+}
+
+.not-available {
+    margin-bottom: 30px;
+    margin-top: -15px;
+}
+
+/* about us */
+
+.abus-toppic {
+    float: right;
+    max-width: 580px;
+    margin-left: 50px;
+}
+
+.abus-topsection {
+    margin-bottom: 29px;
+}
+
+.abus-topsection h1 {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.abus-topsection p,
+.abus-section p {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.abus-section ul li {
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+
+.abus-topsection p b,
+.abus-section p b {
+    font-weight: 500;
+}
+
+.abus-section {
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Korzyna */
+.basket-table thead {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.basket-table thead tr th {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #838383;
+    padding: 28px 0;
+}
+
+.basket-table {
+    width: 100%;
+}
+
+.basket-table thead tr th:first-child,
+.basket-table tbody tr td:first-child {
+    padding-left: 45px;
+    width: 46%;
+}
+
+.basket-table thead tr th:nth-child(2),
+.basket-table tbody tr td:nth-child(2) {
+    width: 15%;
+}
+
+.basket-table thead tr th:nth-child(3),
+.basket-table tbody tr td:nth-child(3) {
+    width: 13%;
+}
+
+.basket-table thead tr th:nth-child(4),
+.basket-table tbody tr td:nth-child(4) {
+    width: 15%;
 }
