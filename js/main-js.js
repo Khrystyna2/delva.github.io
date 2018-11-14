@@ -41,6 +41,22 @@ $(document).ready(function() {
             slidesToScroll: 1
     });
 
+    // slider section proper-engraving
+    $('.slider-proper-engraving').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav-proper-engraving'
+      });
+      $('.slider-nav-proper-engraving').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-proper-engraving',
+        arrows: true,
+        focusOnSelect: true
+      });
+
     
 });
 

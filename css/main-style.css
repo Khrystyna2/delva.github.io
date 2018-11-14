@@ -553,6 +553,155 @@ body {
   border-color: #DB9D7E;
 }
 
+/* section proper-engraving */
+
+.proper-engraving {
+  padding-bottom: 80px;
+}
+
+.proper-engraving__line {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.proper-engraving__info {
+  width: 90%;
+  margin-bottom: 58px;
+}
+
+.proper-engraving__info h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.proper-engraving__info > p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.slider-nav-proper-engraving {
+  width: 100%;
+  height: 130px;
+  padding-left: 92px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-nav-proper-engraving .slick-prev.slick-arrow {
+  background-image: url(../icons/arrow-point-to-left.svg);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.slider-nav-proper-engraving .slick-next.slick-arrow {
+  background-image: url(../icons/arrow-point-to-right.svg);
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
+
+.slider-nav-proper-engraving .slick-arrow {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  left: 0;
+  background: #8A4825;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  z-index: 1;
+}
+
+.proper-engraving__small-img {
+  max-width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+/* 
+.proper-engraving__small-img.slick-current {
+  border: inset 1px solid #612200;
+} */
+
+.proper-engraving__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-proper-engraving {
+  width: 100%;
+}
+
+.proper-engraving__btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 58px;
+  border: 1px solid #000;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 2;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.proper-engraving__btn > svg {
+  margin-left: 9px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.proper-engraving__btn:hover {
+  color: #fff;
+  background-color: #DB9D7E;
+  border-color: #DB9D7E;
+}
+
+.proper-engraving__btn:hover svg {
+  fill: #fff;
+}
+
+
+.proper-engraving__big-img {
+  width: 100%;
+}
+
+.proper-engraving__big-img > img{
+  width: 100%;
+}
+
 /*section footer */
 
 
