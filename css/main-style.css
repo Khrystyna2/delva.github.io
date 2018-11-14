@@ -290,14 +290,16 @@ body {
 }
 
 #search > button {
-  width: 16px;
-  height: 18px;
+  width: 55px;
+  height: 55px;
   position: absolute;
-  top: 50%;
-  margin-top: -9px;
-  right: 114px;
+  top: 0;
+  right: 96px;
   cursor: pointer;
   background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #search input {
@@ -326,7 +328,7 @@ body {
   border: 1px solid #EBEBEB;
   width: 445px;
   padding-left: 30px;
-  padding-right: 40px;
+  padding-right: 60px;
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
         box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
 }
@@ -347,10 +349,15 @@ body {
 .language a {
   padding: 10px;
   display: block;
+  position: relative;
 }
 
-.language a:first-of-type {
+.language a:first-of-type::after {
   border-right: 1px solid;
+  content: '';
+  height: 21px;
+  right: 0;
+  position: absolute;
 }
 
 .language a:hover {
@@ -410,7 +417,6 @@ body {
 
 .btn-section {
   width: 226px;
-  height: 41px;
   border: 1px solid #000;
   display: block;
   font-size: 13px;
@@ -499,6 +505,10 @@ body {
   padding: 0 22px 21px 22px;
 }
 
+.goods__info {
+  align-items: center;
+}
+
 .goods__title {
   font-size: 15px;
   font-weight: 700;
@@ -527,6 +537,7 @@ body {
 
 .goods__btn {
   width: 111px;
+  height: 33px;
   border: 1px solid #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,6 +591,11 @@ body {
 .proper-engraving__info > p {
   font-size: 18px;
   line-height: 21px;
+  padding-bottom: 18px;
+}
+
+.proper-engraving__info > p:last-of-type {
+  padding-bottom: 0;
 }
 
 .slider-nav-proper-engraving {
@@ -696,14 +712,30 @@ body {
 
 .proper-engraving__big-img {
   width: 100%;
+  height: 472px;
 }
 
-.proper-engraving__big-img > img{
+/* .proper-engraving__big-img > img{
   width: 100%;
-}
+} */
 
 /*section footer */
 
+
+@media only screen and (max-width: 1400px) {
+  .slider-index-page .slick-next.slick-arrow {
+    right: -60px;
+  }
+  
+  .slider-index-page .slick-prev.slick-arrow {
+    left: -60px;
+  }
+
+  .slider-index-page .slick-arrow {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 @media only screen and (max-width: 1300px) {
   .us-email {
@@ -751,8 +783,16 @@ body {
     padding: 8px;
   }
 
+  .language a:first-of-type::after {
+    content: '';
+    height: 18px;
+    top: 50%;
+    margin-top: -9px;
+  }
+
   #search > button {
-    right: 98px;
+    right: 85px;
+    height: 50px;
   }
 
   #search input {
@@ -761,8 +801,100 @@ body {
   }
 
   #search input.open-input {
-    width: 450px;
+    width: 472px;
   }
+
+  .slider-header__text {
+    left: 236px;
+  }
+
+  .title-section {
+    font-size: 24px;
+  }
+
+  .section-top-wrap {
+    padding-bottom: 8px;
+  }
+
+  .btn-section {
+    width: 220px;
+    padding: 9px 0;
+  }
+
+  .goods__title {
+    font-size: 14px;
+  }
+
+  .goods__desc {
+    padding: 0 14px 18px 14px;
+  }
+
+  .goods__text {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+
+  .goods__price {
+    font-size: 22px;
+  }
+
+  .goods__btn {
+    width: 98px;
+  }
+
+  .slider-index-page .slick-next.slick-arrow {
+    right: 0;
+  }
+
+  .slider-index-page .slick-prev.slick-arrow {
+    left: 0;
+  }
+
+  .slider-index-page .slick-arrow {
+    width: 54px;
+    height: 54px;
+  }
+
+  .proper-engraving__line {
+    margin-bottom: 32px;
+  }
+
+  .proper-engraving__info {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .proper-engraving__info h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .proper-engraving__info > p {
+    font-size: 15px;
+    line-height: 21px;
+    padding-bottom: 16px;
+  }
+
+  .slider-nav-proper-engraving .slick-arrow {
+    width: 54px;
+    height: 56px;
+  }
+
+  .proper-engraving__small-img {
+    height: 108px;
+  }
+
+  .slider-nav-proper-engraving {
+    height: 106px;
+    padding-left: 68px;
+  }
+
+  .proper-engraving__big-img {
+    height: 396px;
+  }
+
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -819,10 +951,7 @@ body {
   }
 
   #search > button {
-    right: 80px;
-    width: 16px;
-    height: 14px;
-    margin-top: -7px;
+    right: 64px;
   }
 
   #search input {
@@ -831,8 +960,76 @@ body {
   }
 
   #search input.open-input {
-    width: 430px;
+    width: 450px;
   }
+
+  .slider-header__items {
+    height: 349px;
+  }
+
+  .slick-dots {
+    bottom: 24px;
+  }
+
+  .slider-header__text {
+    left: 162px;
+  }
+
+  .slider-header__text h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .slider-header__text > p {
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 6px;
+  }
+
+  .title-section {
+    font-size: 20px;
+  }
+
+  .proper-engraving {
+    padding-bottom: 44px;
+  }
+
+  .proper-engraving__info h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .proper-engraving__info > p {
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 12px;
+  }
+
+  .slider-nav-proper-engraving {
+    height: 88px;
+    padding-left: 54px;
+  }
+
+  .proper-engraving__small-img {
+    height: 88px;
+    margin: 0 6px;
+  }
+
+  .slider-nav-proper-engraving .slick-arrow {
+    width: 44px;
+    height: 44px;
+  }
+
+  .proper-engraving__big-img {
+    height: 426px;
+  }
+
+  .proper-engraving__btn {
+    font-size: 14px;
+  }
+
+
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -1045,29 +1242,68 @@ body {
     border: 1px solid #EBEBEB;
     width: 100%;
     padding-left: 20px;
-    padding-right: 35px;
-    -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
-    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
+    padding-right: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     position: static;
     height: 41px;
   }
 
   #search input.open-input {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 50px;
   }
 
   #search > button {
-    right: 20px;
-    width: 16px;
-    height: 17px;
-    margin-top: -7.5px;
+    height: 41px;
+    right: 0;
   }
 
   .language {
     display: none;
   }
 
+  .slider-header {
+    margin-top: 20px;
+  }
 
+  .slider-header, .slider-header__items {
+    height: 290px;
+}
+
+.slider-header__text {
+  left: 25px;
+  top: 40px;
+}
+.slider-index-page .slick-arrow {
+  width: 44px;
+  height: 44px;
+}
+
+.slider-nav-proper-engraving {
+  height: 130px;
+  padding-left: 74px;
+  margin-top: 20px;
+}
+
+.slider-nav-proper-engraving .slick-arrow {
+  width: 56px;
+  height: 64px;
+}
+
+.proper-engraving__small-img {
+  height: 130px;
+  margin: 0 10px;
+}
+
+.proper-engraving__img {
+  height: 482px;
+}
+
+.block-hide {
+  display: none;
+}
 
 }
 
@@ -1075,6 +1311,109 @@ body {
   .user > span {
     display: none;
   }
+
+  .slider-header__text {
+    left: 22px;
+    top: 40px;
+    width: 250px;
+}
+
+.slider-header__text > p {
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 6px;
+}
+
+.slider-header__text > p:last-of-type {
+  display: none;
+}
+
+.slider-header, .slider-header__items {
+  height: 210px;
+}
+
+.slick-dots {
+  bottom: 12px;
+}
+
+.slider-header__items {
+  background-size: 720px !important;
+}
+
+  .slider-header__text h1 {
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 6px;
+    width: 170px;
+}
+
+.flash-memory {
+  padding-top: 30px;
+}
+
+.btn-section {
+  width: 33px;
+  height: 33px;
+}
+
+.btn-section > span {
+  display: none;
+}
+.btn-section > img {
+  display: inline-block;
+}
+
+.section-top-wrap {
+  padding-bottom: 0;
+}
+
+.title-section {
+  font-size: 18px;
+}
+
+.slider-index-page .slick-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+.slider-index-page .slick-next.slick-arrow {
+  right: -10px;
+}
+.slider-index-page .slick-prev.slick-arrow {
+  left: -10px;
+}
+
+.slider-index-page {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.goods {
+  max-width: 100%;
+  margin: 0;
+}
+
+.proper-engraving__info h2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.proper-engraving__info > p {
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 12px;
+}
+
+.slider-nav-proper-engraving {
+  padding-left: 0;
+}
+
+.proper-engraving__small-img {
+  max-width: 100%;
+}
+
 }
 
 @media only screen and (min-width: 1301px) {

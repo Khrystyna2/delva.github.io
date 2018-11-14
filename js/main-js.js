@@ -5,16 +5,19 @@ $(document).ready(function() {
         $('#menu-dropDown').toggleClass('rotate');
     });
     
-    $('#search>button').click(function() {
-        $('#search>input').addClass('open-input');  
-    });
-
-    $(document).mouseup(function (e) {
-        var popup = $("#search>input");
-        if (!$('#search>button').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
-           popup.removeClass('open-input');
-        }
-    });
+    // search input
+    if ($(window).width() >= 768) {
+        $('#search>button').click(function() {
+            $('#search>input').addClass('open-input');  
+        });
+    
+        $(document).mouseup(function (e) {
+            var popup = $("#search>input");
+            if (!$('#search>button').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+               popup.removeClass('open-input');
+            }
+        });
+    }
 
     //menu on mobile screen
     $('.btn-menu').click(function() {
@@ -38,7 +41,30 @@ $(document).ready(function() {
             arrows: true,
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 767.8,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
     });
 
     // slider section proper-engraving
@@ -47,14 +73,39 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav-proper-engraving'
+        asNavFor: '.slider-nav-proper-engraving',
+        responsive: [
+          {
+            breakpoint: 500,
+            settings: {
+              arrows: true
+            }
+          }
+        ]
       });
       $('.slider-nav-proper-engraving').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.slider-proper-engraving',
         arrows: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false
+            }
+          }
+        ]
       });
 
     
