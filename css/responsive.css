@@ -66,6 +66,19 @@
     .catalog-products.rowproducts .product-block .inf-block {
         padding-top: 10px;
     }
+
+    .event-section {
+        padding: 60px 0 60px 0;
+    }
+
+    .event-section h2 {
+        font-size: 24px;
+    }
+
+    .event-slider .slick-arrow, .bottom-prslider .slick-arrow {
+        width: 54px;
+        height: 54px;
+    }
 }
 
 @media(max-width:1200.8px) {
