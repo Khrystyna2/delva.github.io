@@ -1,4 +1,21 @@
 @media(max-width:1550px) {
+    .no-gar li {
+        font-size: 16px;
+    }
+    .error-sect {
+        height: 500px;
+    }
+    .lefterr-block .title {
+        font-size: 36px;
+    }
+    .lefterr-block .descr {
+        font-size: 20px;
+    }
+    .lefterr-block a {
+        font-size: 14px;
+        width: 250px;
+        height: 50px;
+    }
     .contact-leftsect h1 {
         margin-bottom: 30px;
     }
@@ -77,6 +94,9 @@
 }
 
 @media(max-width:1300.8px) {
+    .error-sect {
+        background-position: center center;
+    }
     .event-block .bottinf-block p.descr {
         overflow: hidden;
     }
@@ -162,6 +182,12 @@
 }
 
 @media(max-width:991.8px) {
+    .no-gar li {
+        font-size: 14px;
+    }
+    .error-sect {
+        height: 400px;
+    }
     .liked-section {
         margin-bottom: 30px;
     }
@@ -299,6 +325,12 @@
     }
 }
 @media(max-width:767.8px) {
+    .lefterr-block .title {
+        font-size: 25px;
+    }
+    .lefterr-block .descr {
+        font-size: 16px;
+    }
     .map-section {
         margin-top: 20px;
     }
@@ -435,6 +467,23 @@
 }
 
 @media(max-width:575.8px) {
+    .error-sect {
+        height: 300px;
+        position: relative;
+        background-image: none;
+    }
+    .errphone {
+        display: block;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../image/new-pic/error.png);
+        background-size: cover;
+        background-size: cover;
+    background-position: inherit;
+    }
     .dostavka .title, .oplata .title {
         font-size: 20px;
     }
@@ -564,5 +613,10 @@
     }
     .bottom-prslider .slick-prev.slick-arrow {
         left: -10px;
+    }
+}
+@media(max-width:480px) {
+    .error-sect {
+        background-position: 57% 0%;
     }
 }

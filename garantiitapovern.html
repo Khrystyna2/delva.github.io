@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Дельва - Гарантії та повернення</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style slick -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- style inputs and selext -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/main-style-2.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-sm-4 col-md-2">
+                    <a href="index.html" class="logo">
+                        <img src="image/logo.svg" alt="Дельва">
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 offset-lg-1 col-xl-2 offset-xl-2 d-none d-md-block">
+                    <div class="us-email">
+                        <span>delva.workshop@ukr.net</span>
+                        <a href="#"><span>Ми в</span> Instagram</a>
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="phone">
+                        <a href="tel: +38 (098) 534-33-22">+38 (098) 534-33-22</a>
+                        <a href="#" class="callback" data-toggle="modal" data-target="#feedbackModal">Зворотній дзвінок</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="feedbackModalLabel">Залишіть ваші контакти і ми вам
+                                        заталефонуємо</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="nameInput">Ім’я</label>
+                                            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp"
+                                                placeholder="Як вас звати?">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phoneInput">Телефон</label>
+                                            <input type="text" class="form-control" id="phoneInput" placeholder="Введіть номер телефону">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="textTextarea">Повідомлення</label>
+                                            <textarea name="" cols="20" rows="5" id="textTextarea" class="form-control"
+                                                placeholder="Залишіть декілька слів про ваше питання або проблему"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn-feedbackModal">Відправити повідомлення</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-8 col-md-4 col-lg-3">
+                    <div class="group-icon d-flex justify-content-end align-items-center">
+                        <a href="#" class="user d-flex align-items-center">
+                            <span>Вхід</span>
+                            <img src="icons/user.svg" alt="user">
+                        </a>
+                        <a href="#" class="liked-goods">
+                            <img src="icons/heart.svg" alt="heart">
+                        </a>
+                        <a href="#" id="basket">
+                            <span id="counter" class="d-flex align-items-center justify-content-center">2</span>
+                            <img src="icons/shopping-basket.svg" alt="basket">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-menu d-flex justify-content-between align-items-center">
+                            <div class="btn-menu">
+                                <img src="icons/menu.svg" alt="menu">
+                            </div>
+                            <nav class="menu">
+                                <div class="btn-close">
+                                    <img src="icons/close.svg" alt="close">
+                                </div>
+                                <ul class="d-flex">
+                                    <li id="menu-dropDown">
+                                        <div><img src="icons/menu.svg" alt="menu">товари</div>
+                                        <ul class="hide-list">
+                                            <li><a href="#">Флеш-память</a></li>
+                                            <li><a href="#">Футляри</a></li>
+                                            <li><a href="#">Шкатулки</a></li>
+                                            <li><a href="#">Флеш-память</a></li>
+                                            <li><a href="#">Футляри</a></li>
+                                            <li><a href="#">Шкатулки</a></li>
+                                            <li><a href="#">Власне гравіювання <img src="icons/art.svg" alt=""></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Конструктор</a></li>
+                                    <li><a href="#">Доставка і оплата</a></li>
+                                    <li><a href="#">Новини</a></li>
+                                    <li><a href="#">Контакти</a></li>
+                                    <!-- this for mobil screen -->
+                                    <div id="phoneMob" class="phone">
+                                        <a href="tel: +38 (098) 534-33-22">+38 (098) 534-33-22</a>
+                                        <a href="#" class="callback">Зворотній дзвінок</a>
+                                    </div>
+                                    <div id="our-emailMob" class="us-email">
+                                        <span>delva.workshop@ukr.net</span>
+                                        <a href="#"><span>Ми в</span> Instagram</a>
+                                    </div>
+                                    <div id="languageMob" class="language">
+                                        <a href="#">Укр</a>
+                                        <a href="#">Рус</a>
+                                    </div>
+                                    <a href="#" id="own-design">Власне гравіювання <img src="icons/art.svg" alt=""></a>
+                                </ul>
+                            </nav>
+                            <div id="search">
+                                <input type="search" placeholder="Пошук ...">
+                                <button type="button"><img src="icons/search.svg" alt="search"></button>
+                            </div>
+                            <div class="language">
+                                <a href="#">Укр</a>
+                                <a href="#">Рус</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li>Гарантії та повернення</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="dostavka">
+                <p class="title">Гарантії та повернення</p>
+                <p>
+                    Відповідно до закону «про захист прав споживача» Ви маєте право повернути або обміняти
+                    непродовольчий товар належної якості на аналогічний протягом 14 днів з моменту покупки, якщо товар
+                    не задовольняє формою, габаритами, фасоном, кольором, розміром або з інших причин не може бути
+                    використаний за призначенням при наступних умовах:
+                </p>
+                <p>
+                    Товар не був у вживанні і не має слідів використання : подряпин , сколів , потертостей і т.д.
+                </p>
+                <p>
+                    Товар повністю укомплектований і не порушена цілісність упаковки.
+                    Збережені всі ярлики і заводське маркування .
+                </p>
+                <p>
+                    <b>
+                        Повернення або обмін проводиться за наступними адресами:
+                    </b><br>
+                    <i>м. Івано-Франківськ, вул. Коновальця 207 </i><br>
+
+                    <i> м. Івано-Франківськ, вул. Макухи 9</i>
+
+                </p>
+                <p>
+                    <b>
+                        При собі потрібно мати:
+                    </b><br>
+                    <i>- Товар</i><br>
+                    <i>- Комплектуючі до товару</i><br>
+                    <i>- Гарантійний талон</i><br>
+                    <i> - Документи які підтверджують оплату.</i>
+                </p>
+            </div>
+            <div class="oplata">
+                <p class="title">У яких випадках гарантія не надається?</p>
+                <ul class="no-gar">
+                    <li>
+                        ушкодження , викликані аварійним підвищенням;
+                    </li>
+                    <li>неправильного монтажу обладнання;</li>
+                    <li>неправильного першого пуску обладнання;
+                    </li>
+                    <li>ушкодження, викликані потраплянням всередину виробу сторонніх предметів;</li>
+                    <li>речовин, рідин або під дією екстремальних температур;
+                    </li>
+                    <li> ушкодження , викликані неправильним підключенням до електромережі;
+                    </li>
+                    <li>ушкодження , викликані використанням товару не за призначенням
+                        або з порушенням правил експлуатації;
+                    </li>
+                    <li>порушення цілісності гарантійних пломб;
+                    </li>
+                    <li>наявності механічних або інших пошкоджень , що виникли внаслідок умисних
+                        або необережних дій покупця або третіх осіб;
+                    </li>
+                    <li>несанкціонованого ремонту або зміни внутрішніх компонентів товару, зміни
+                        конструкцій або схеми товару;
+                    </li>
+                    <li>неправильного заповнення гарантійного талона.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="topfooter-sect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-lg-6">
+                        <div class="left-footblock">
+                            <a href="index.html" class="foot-logo"><img src="image/logo.svg" alt=""></a>
+                            <p>
+                                Завдяки старанням нашого обслуговуючого інженера ми маємо можливість потішити вас
+                                неймовірною якістю гравіювання. Ще більше деталей відображених в деревині!!!
+                                Переконайтесь
+                                в цьому замовивши та оплативши продукцію до 7 вересня включно ...
+                            </p>
+                            <div class="foot-social">
+                                <a href="#"><img src="image/new-pic/footpic1.png" alt=""></a>
+                                <a href="#"><img src="image/new-pic/footpic2.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md col-lg-3 col-sm-6">
+                        <div class="foot-sitemap">
+                            <p class="title">КАРТА САЙТУ <img src="image/new-pic/foot-arrow.png" alt=""></p>
+                            <ul>
+                                <li><a href="#">Головна</a></li>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Доставка і оплата</a></li>
+                                <li><a href="#">Новини</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md col-lg-3 col-sm-6">
+                        <div class="foot-contact">
+                            <p class="title">наші контакти</p>
+                            <ul>
+                                <li>м. Коломиї, вулиця Миру 47, офіс 3</li>
+                                <li><a href="tel:+380985343322">+38 (098) 534-33-22</a></li>
+                                <li><a href="mailto:delva.workshop@ukr.net">delva.workshop@ukr.net</a></li>
+                            </ul>
+                            <div class="foot-soc">
+                                <a href="#"><img src="image/new-pic/inst-icon-foot.png" alt=""></a>
+                                <a href="#"><img src="image/new-pic/fb-icon-foot.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="bottfooter-sect">
+                    <div class="foot-social showphone">
+                        <a href="#"><img src="image/new-pic/footpic1.png" alt=""></a>
+                        <a href="#"><img src="image/new-pic/footpic2.png" alt=""></a>
+                    </div>
+                    <div class="col-md-4 col-sm-12 phone-hide"><span>© Дельва. 2008-2018. Всі права захищені</span></div>
+                    <div class="col-md-8 col-sm-12">
+                        <span class="phone-show">Розроблено студією <a href="#">FlyFox</a></span>
+                        <span><a href="#">Гарантії та повернення</a></span>
+                        <span><a href="#">Політика конфіденційності</a></span>
+                        <span class="phone-hide">Розроблено студією <a href="#">FlyFox</a></span>
+                        <span class="phone-show">© Дельва. 2008-2018.<br> Всі права захищені</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main-js.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
