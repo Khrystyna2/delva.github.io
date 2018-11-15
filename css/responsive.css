@@ -560,9 +560,9 @@
         z-index: 99;
     }
     .bottom-prslider .slick-next.slick-arrow {
-        right: -20px;
+        right: -10px;
     }
     .bottom-prslider .slick-prev.slick-arrow {
-        left: -20px;
+        left: -10px;
     }
 }

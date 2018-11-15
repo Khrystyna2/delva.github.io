@@ -417,6 +417,17 @@ header .header-bottom {
     border-radius: 1px;
     align-items: center;
     justify-content: center;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.product-block .details:hover {
+    color: #fff;
+    background-color: #DB9D7E;
+    border-color: #DB9D7E;
 }
 
 .product-block>a {
