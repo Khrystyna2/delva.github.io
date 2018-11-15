@@ -1,8 +1,20 @@
 @media(max-width:1550px) {
-    .card-bottsection .text-block p {
+    .contact-leftsect h1 {
+        margin-bottom: 30px;
+    }
+    .addsoc .title {
+        font-size: 20px;
+    }
+    .adres-block .descr, .adres-block .title, .cont-base .title,
+    .cont-base .cont-phone, .cont-base .cont-mail {
         font-size: 16px;
     }
-    .abus-topsection h1, .bottom-prslider-section h2, .catalog-topsect h1 {
+    .card-bottsection .text-block p,
+    .dostavka p:not(title), .oplata p:not(title) {
+        font-size: 16px;
+    }
+    .abus-topsection h1, .bottom-prslider-section h2, .catalog-topsect h1, h1,
+    .dostavka .title, .oplata .title {
         font-size: 24px;
     }
     .abus-topsection p, .abus-section p {
@@ -11,8 +23,47 @@
     .abus-toppic {
         max-width: 310px;
     }
+    .new-description p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .new-description p.boldtext, .new-description ul li {
+        font-size: 16px;
+    }
+    .arrnav a {
+        font-size: 14px;
+    }
+    .new-description ul {
+        margin-bottom: 15px;
+    }
+    .new-description p.boldtext {
+        margin-bottom: 15px;
+    }
 }
 @media(max-width:1367.8px) {
+    .new-bottomsect {
+        height: 70px;
+    }
+    .new-bottomsect .newsoclist li a {
+        height: 35px;
+        width: 35px;
+    }
+    .new-description p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .new-description p.boldtext, .new-description ul li {
+        font-size: 14px;
+    }
+    .arrnav a {
+        font-size: 14px;
+    }
+    .new-description ul {
+        margin-bottom: 15px;
+    }
+    .new-description p.boldtext {
+        margin-bottom: 15px;
+    }
 
     .event-slider .slick-next.slick-arrow {
         right: -60px;
@@ -26,6 +77,9 @@
 }
 
 @media(max-width:1300.8px) {
+    .event-block .bottinf-block p.descr {
+        overflow: hidden;
+    }
     .card-bottsection .text-block p {
         font-size: 16px;
     }
@@ -82,6 +136,7 @@
 }
 
 @media(max-width:1200.8px) {
+    
     .bottpr-slide.slick-center .picblock-prslider, .picblock-prslider {
         height: 200px;
         width: 200px;
@@ -107,6 +162,49 @@
 }
 
 @media(max-width:991.8px) {
+    .liked-section {
+        margin-bottom: 30px;
+    }
+    .dostavka {
+        padding-bottom: 30px;
+    }
+    .oplata {
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+    .dostavka p:not(title), .oplata p:not(title) {
+        font-size: 14px;
+    }
+    .contact-section {
+        margin-bottom: 40px;
+    }
+    .adres-block .descr, .adres-block .title, .cont-base .title, .cont-base .cont-phone, .cont-base .cont-mail {
+        font-size: 14px;
+    }
+    .contact-leftsect h1 {
+        margin-bottom: 20px;
+    }
+    .cont-base .cont-phone {
+        line-height: 20px;
+    }
+    .map-section {
+        height: 360px;
+    }
+    .adres-block, .cont-base {
+        margin-bottom: 20px;
+    }
+    .new-section {
+        margin-bottom: 40px;
+    }
+    .table-scroll {
+        overflow-x: scroll;
+    }
+    .basket-table {
+        width: 900px;
+    }
+    .order-processing {
+        margin-bottom: 40px;
+    }
     .abus-section {
         margin-bottom: 40px;
     }
@@ -201,6 +299,40 @@
     }
 }
 @media(max-width:767.8px) {
+    .map-section {
+        margin-top: 20px;
+    }
+    .arrnav a {
+        font-size: 13px;
+    }
+    .arrnav .navprev {
+        margin-right: 6px;
+        padding-left: 20px;
+    }
+    .arrnav .navnewxt {
+        margin-left: 6px;
+        padding-right: 20px;
+    }
+    .new-bottomsect .newsoclist li:first-child {
+        font-size: 14px;
+    }
+    .new-bottomsect .newsoclist li a {
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+    }
+    .new-description ul li {
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+    .event-block .bottinf-block {
+        padding-bottom: 20px;
+    }
+    .order-processing .continue-shopping,
+    .order-processing input[type="submit"] {
+        font-size: 14px;
+        max-width: 100%;
+    }
     .abus-toppic {
         max-width: 200px;
         margin-left: 20px;
@@ -303,6 +435,32 @@
 }
 
 @media(max-width:575.8px) {
+    .dostavka .title, .oplata .title {
+        font-size: 20px;
+    }
+    .abus-topsection h1, .bottom-prslider-section h2, .catalog-topsect h1, h1 {
+        font-size: 20px;
+    }
+    .newsoclist {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .new-bottomsect {
+        height: 90px;
+    }
+    .arrnav {
+        justify-content: center;
+    }
+    .order-processing .continue-shopping {
+        margin-bottom: 10px;
+    }
+    .order-processing .continue-shopping,
+    .order-processing input[type="submit"] {
+        width: 100%;
+    }
+    .basket-table thead tr th:first-child, .basket-table tbody tr td:first-child {
+        padding-left: 15px;
+    }
     .abus-toppic {
         max-width: 100%;
         margin-left: 0;
