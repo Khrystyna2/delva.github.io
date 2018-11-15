@@ -775,7 +775,248 @@ body {
   width: 100%;
 } */
 
-/*section footer */
+/*section order */
+.order {
+  padding-bottom: 78px;
+}
+
+.order-content {
+  width: 626px;
+  border: 1px solid #EBEBEB;
+  padding: 35px 45px;
+}
+
+.btn-checked-order {
+  background: -webkit-linear-gradient( right, #DB9D7E, #A06243);
+  background: -o-linear-gradient( right, #DB9D7E, #A06243);
+  background: linear-gradient(to right, #DB9D7E, #A06243);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 314px;
+  height: 58px;
+  margin-top: 35px;
+}
+
+.btn-checked-order:hover {
+  background: #A06243;
+}
+
+.order-form .form-group {
+  margin-bottom: 35px;
+}
+
+.order-form .form-group .form-control {
+  width: 380px;
+  height: 46px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.order-body {
+  margin-top: 62px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.order-body::before,
+.order-body::after {
+  content: '';
+  border-bottom: 1px solid #EBEBEB;
+  width: calc(100% + 90px);
+  margin-left: -45px;
+  position: absolute;
+  left: 0;
+}
+
+.order-body::before {
+  top: -30px;
+}
+
+.order-body::after {
+  bottom: -40px;
+}
+
+
+
+/*style for button way to delivery*/
+#wayDelivery {
+  width: 380px;
+  height: 38px;
+}
+#wayDelivery .label-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#wayDelivery .label-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#wayDelivery .check {
+  position: absolute;
+  top: 0;
+  width: 175px;
+  height: 38px;
+  background-color: #B8B8B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #fff;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+#wayDelivery .label-checkbox:first-of-type .check {
+  left: 0;
+}
+
+#wayDelivery .label-checkbox:last-of-type .check {
+  right: 0;
+}
+
+#wayDelivery .label-checkbox input:checked ~ .check {
+  display: block;
+  background-color: #8A4825;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*the end style for button way to delivery*/
+
+
+.order-input-group {
+  margin-bottom: 11px;
+}
+.order-footer > p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #838383;
+  padding-bottom: 18px;
+}
+
+.order-footer > p:last-of-type {
+  padding-bottom: 0;
+}
+
+.order-footer > p > span {
+  color: #000;
+}
+/*style for radio-checkbox*/
+.box-input-group {
+  width: 380px;
+}
+.label-radio-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 17px;
+  color: #929292;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 15px;
+  padding-left: 28px;
+}
+
+.label-radio-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checked-radio {
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #B8B8B8;
+}
+
+.checked-radio:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -4.5px;
+  left: 50%;
+  margin-left: -4.5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #8A4825;
+  display: none;
+}
+.label-radio-checkbox input:checked ~ .checked-radio::after {
+  display: block;
+}
+.label-radio-checkbox input:checked ~ .checked-radio {
+  border-color: #8A4825;
+}
+
+.label-radio-checkbox input:checked ~ span {
+  color: #8A4825;
+}
+
+#selfCheckoutBox {
+  color: #838383;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 30px;
+  display: none;
+}
+
+#selfCheckoutBox > p {
+  padding-bottom: 18px;
+}
+
+#selfCheckoutBox > span {
+  font-weight: 400;
+  padding-bottom: 6px;
+  display: block;
+}
+
+#selfCheckoutBox > ul li {
+  padding-bottom: 6px;
+}
+
+#newPostBox {
+  margin-top: 30px;
+  display: none;
+}
+
 
 
 @media only screen and (max-width: 1400px) {

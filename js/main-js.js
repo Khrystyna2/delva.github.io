@@ -108,6 +108,26 @@ $(document).ready(function() {
         ]
       });
 
+      $('#selfCheckout').on('click', function() {
+        $('#newPostBox').hide();
+        $('#selfCheckoutBox').show();
+      });
+
+      $('#newPost').on('click', function() {
+        $('#selfCheckoutBox').hide();
+        $('#newPostBox').show();
+      });
+
+      $('#newPostCourier').on('click', function() {
+        $('#newPostDepartmentOpen').hide();
+        $('#newPostCourierOpen').show();
+      });
+
+      $('#newPostDepartment').on('click', function() {
+        $('#newPostCourierOpen').hide();
+        $('#newPostDepartmentOpen').show();
+      });
+
     
 });
 
