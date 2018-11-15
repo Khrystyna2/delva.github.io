@@ -854,6 +854,7 @@ body {
   .slider-index-page .slick-arrow {
     width: 54px;
     height: 54px;
+    background-color: rgb(238, 238, 238);
   }
 
   .proper-engraving__line {
@@ -1061,7 +1062,7 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 0;
+    width: 100%;
     z-index: 100;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
@@ -1076,7 +1077,6 @@ body {
   }
 
   .menu.show-menu {
-    width: 100%;
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -1270,41 +1270,94 @@ body {
 
   .slider-header, .slider-header__items {
     height: 290px;
+  }
+
+  .slider-header__text {
+    left: 25px;
+    top: 40px;
+  }
+  .slider-index-page .slick-arrow {
+    width: 44px;
+    height: 44px;
+  }
+
+  .slider-nav-proper-engraving {
+    height: 130px;
+    padding-left: 70px;
+    margin-top: 20px;
+  }
+
+  .slider-nav-proper-engraving .slick-arrow {
+    width: 56px;
+    height: 64px;
+  }
+
+  .proper-engraving__small-img {
+    height: 130px;
+    margin: 0 10px;
+  }
+
+  .slider-nav-proper-engraving {
+    width: calc(100% + 10px);
+  }
+
+  .proper-engraving__img {
+    height: 482px;
+  }
+
+  .block-hide {
+    display: none;
+  }
+
+  .proper-engraving__info > p {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 12px;
+  }
+
 }
 
-.slider-header__text {
-  left: 25px;
-  top: 40px;
-}
-.slider-index-page .slick-arrow {
-  width: 44px;
-  height: 44px;
-}
+@media only screen and (max-width: 575.8px) {
 
-.slider-nav-proper-engraving {
-  height: 130px;
-  padding-left: 74px;
-  margin-top: 20px;
-}
+  .proper-engraving__btn {
+    display: none;
+  }
 
-.slider-nav-proper-engraving .slick-arrow {
-  width: 56px;
-  height: 64px;
-}
+  .proper-engraving__img, .proper-engraving__big-img {
+    height: 380px;
+  }
 
-.proper-engraving__small-img {
-  height: 130px;
-  margin: 0 10px;
-}
+  .slider-nav-proper-engraving {
+    width: calc(100% + 10px);
+  }
 
-.proper-engraving__img {
-  height: 482px;
-}
+  .proper-engraving__small-img {
+    max-width: 100%;
+  }
+  
+  .btn-create-engraving {
+    width: 100%;
+    height: 58px;
+    border: 1px solid #000;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 
-.block-hide {
-  display: none;
-}
-
+  .btn-create-engraving > img {
+    margin-left: 8px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1316,103 +1369,130 @@ body {
     left: 22px;
     top: 40px;
     width: 250px;
-}
+  }
 
-.slider-header__text > p {
-  font-size: 14px;
-  line-height: 16px;
-  padding-bottom: 6px;
-}
+  .slider-header__text > p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 6px;
+  }
 
-.slider-header__text > p:last-of-type {
-  display: none;
-}
+  .slider-header__text > p:last-of-type {
+    display: none;
+  }
 
-.slider-header, .slider-header__items {
-  height: 210px;
-}
+  .slider-header, .slider-header__items {
+    height: 210px;
+  }
 
-.slick-dots {
-  bottom: 12px;
-}
+  .slick-dots {
+    bottom: 12px;
+  }
 
-.slider-header__items {
-  background-size: 720px !important;
-}
+  .slider-header__items {
+    background-size: 720px !important;
+  }
 
   .slider-header__text h1 {
     font-size: 19px;
     line-height: 22px;
     margin-bottom: 6px;
     width: 170px;
-}
+  }
 
-.flash-memory {
-  padding-top: 30px;
-}
+  .flash-memory {
+    padding-top: 30px;
+  }
 
-.btn-section {
-  width: 33px;
-  height: 33px;
-}
+  .btn-section {
+    width: 33px;
+    height: 33px;
+  }
 
-.btn-section > span {
-  display: none;
-}
-.btn-section > img {
-  display: inline-block;
-}
+  .btn-section > span {
+    display: none;
+  }
+  .btn-section > img {
+    display: inline-block;
+  }
 
-.section-top-wrap {
-  padding-bottom: 0;
-}
+  .section-top-wrap {
+    padding-bottom: 0;
+  }
 
-.title-section {
-  font-size: 18px;
-}
+  .title-section {
+    font-size: 18px;
+  }
 
-.slider-index-page .slick-arrow {
-  width: 40px;
-  height: 40px;
-}
+  .slider-index-page .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
 
-.slider-index-page .slick-next.slick-arrow {
-  right: -10px;
-}
-.slider-index-page .slick-prev.slick-arrow {
-  left: -10px;
-}
+  .slider-index-page .slick-next.slick-arrow {
+    right: -10px;
+  }
+  .slider-index-page .slick-prev.slick-arrow {
+    left: -10px;
+  }
 
-.slider-index-page {
-  margin-bottom: 50px;
-  margin-top: 20px;
-  margin-left: 0;
-  margin-right: 0;
-}
+  .slider-index-page {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-.goods {
-  max-width: 100%;
-  margin: 0;
-}
+  .goods {
+    max-width: 100%;
+    margin: 0;
+  }
 
-.proper-engraving__info h2 {
-  font-size: 18px;
-  line-height: 24px;
-}
+  .proper-engraving__info h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-.proper-engraving__info > p {
-  font-size: 16px;
-  line-height: 19px;
-  padding-bottom: 12px;
-}
+  .slider-nav-proper-engraving {
+    padding-left: 0;
+  }
 
-.slider-nav-proper-engraving {
-  padding-left: 0;
-}
+  .proper-engraving__small-img {
+    max-width: 100%;
+  }
 
-.proper-engraving__small-img {
-  max-width: 100%;
-}
+  .slider-nav-proper-engraving {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
+
+  .slider-proper-engraving .slick-prev.slick-arrow {
+    left: -10px;
+    background-image: url(../image/new-pic/arrow-left.png);
+  }
+
+  .slider-proper-engraving .slick-next.slick-arrow {
+    right: -10px;
+    background-image: url(../image/new-pic/arrow-right.png);
+  }
+
+  .slider-proper-engraving .slick-arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgb(238, 238, 238);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+  }
+
+  .proper-engraving__img {
+    overflow: visible;
+  }
+
+  .proper-engraving__img, .proper-engraving__big-img {
+    height: 320px;
+  }
 
 }
 
