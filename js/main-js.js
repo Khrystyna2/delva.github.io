@@ -109,25 +109,28 @@ $(document).ready(function() {
       });
 
       $('#selfCheckout').on('click', function() {
-        $('#newPostBox').hide();
-        $('#selfCheckoutBox').show();
+        $('#newPostOpen').hide();
+        $('#selfCheckoutOpen').show();
       });
 
       $('#newPost').on('click', function() {
-        $('#selfCheckoutBox').hide();
-        $('#newPostBox').show();
+        $('#selfCheckoutOpen').hide();
+        $('#newPostOpen').show();
       });
 
-      $('#newPostCourier').on('click', function() {
-        $('#newPostDepartmentOpen').hide();
-        $('#newPostCourierOpen').show();
-      });
+      //show form new post
+      if ($("#newPostCourier, #newPostDepartment").is(":checked")) {
+        $('#newPostCourierOpen, #newPostDepartment').show();
+      }
 
-      $('#newPostDepartment').on('click', function() {
-        $('#newPostCourierOpen').hide();
-        $('#newPostDepartmentOpen').show();
-      });
-
+      $("#newPostDepartment, #newPostCourier").change(function () {
+        $('#newPostDepartmentOpen, #newPostCourierOpen').hide();
+        if ($("#newPostCourier").is(":checked")) {
+          $('#newPostCourierOpen').show();
+        }
+        else if ($("#newPostDepartment").is(":checked"))
+          $('#newPostDepartmentOpen').show();
+      });   
     
 });
 

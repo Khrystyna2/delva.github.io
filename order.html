@@ -45,20 +45,23 @@
                         <a href="#" class="callback" data-toggle="modal" data-target="#feedbackModal">Зворотній дзвінок</a>
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h5 class="modal-title" id="feedbackModalLabel">Залишіть ваші контакти і ми вам заталефонуємо</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                    <h5 class="modal-title" id="feedbackModalLabel">Залишіть ваші контакти і ми вам
+                                        заталефонуємо</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
                                 <div class="modal-body">
                                     <form>
                                         <div class="form-group">
                                             <label for="nameInput">Ім’я</label>
-                                            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Як вас звати?">
+                                            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp"
+                                                placeholder="Як вас звати?">
                                         </div>
                                         <div class="form-group">
                                             <label for="phoneInput">Телефон</label>
@@ -66,7 +69,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="textTextarea">Повідомлення</label>
-                                            <textarea name="" cols="20" rows="5" id="textTextarea" class="form-control" placeholder="Залишіть декілька слів про ваше питання або проблему"></textarea>
+                                            <textarea name="" cols="20" rows="5" id="textTextarea" class="form-control"
+                                                placeholder="Залишіть декілька слів про ваше питання або проблему"></textarea>
                                         </div>
                                         <button type="submit" class="btn-feedbackModal">Відправити повідомлення</button>
                                     </form>
@@ -201,8 +205,9 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div id="selfCheckoutBox">
-                                    <p>Ви можете забрати ваш товар за адресою: м. Коломиї, вулиця Миру 48, офіс 3, 4 поверх</p>
+                                <div id="selfCheckoutOpen">
+                                    <p>Ви можете забрати ваш товар за адресою: м. Коломиї, вулиця Миру 48, офіс 3, 4
+                                        поверх</p>
                                     <span>Графік роботи:</span>
                                     <ul>
                                         <li>Пн-Пт: 09:00-20:00</li>
@@ -210,49 +215,241 @@
                                         <li>Нд: 11:00-16:00</li>
                                     </ul>
                                 </div>
-                                <div id="newPostBox">
+                                <div id="newPostOpen">
                                     <div class="order-input-group d-flex justify-content-end align-items-start">
                                         <div class="box-input-group">
-                                            <label class="label-radio-checkbox" id="newPostDepartment">
-                                                <input type="radio" name="order">
+                                            <label class="label-radio-checkbox">
+                                                <input type="radio" name="order" id="newPostDepartment">
                                                 <span class="checked-radio"></span>
                                                 <span>Доставка у відділення Нової почти</span>
                                             </label>
-                                            <label class="label-radio-checkbox" id="newPostCourier">
-                                                <input type="radio" name="order">
+                                            <label class="label-radio-checkbox">
+                                                <input type="radio" name="order" id="newPostCourier" checked>
                                                 <span class="checked-radio"></span>
                                                 <span>Доставка курєром Нової Пошти</span>
                                             </label>
                                         </div>
                                     </div>
+                                    <div id="newPostCourierOpen">
+                                        <form class="">
+                                            <div class="form-group select-style d-flex justify-content-between align-items-center">
+                                                <label for="nameOrderInput">Ваш регіон *</label>
+                                                <select name="" id="">
+                                                    <option value="">Івано-Франківська область</option>
+                                                    <option value="">Івано-Франківськ</option>
+                                                    <option value="">Кривий ріг</option>
+                                                    <option value="">Харків</option>
+                                                    <option value="">Львів</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group select-style d-flex justify-content-between align-items-center">
+                                                <label for="nameOrderInput">Ваше місто *</label>
+                                                <select name="" id="">
+                                                    <option value="">Коломия</option>
+                                                    <option value="">Івано-Франківськ</option>
+                                                    <option value="">Кривий ріг</option>
+                                                    <option value="">Харків</option>
+                                                    <option value="">Львів</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group d-flex justify-content-between align-items-center">
+                                                <label for="addressOrderInput">Адреса *</label>
+                                                <input type="text" class="form-control" id="addressOrderInput">
+                                            </div>
+                                            <div class="wrapper-form-group d-flex justify-content-between">
+                                                <div class="form-group d-flex justify-content-between align-items-center">
+                                                    <label for="apartmentOrderInput">Квартира</label>
+                                                    <input type="text" class="form-control" id="apartmentOrderInput">
+                                                </div>
+                                                <div class="form-group d-flex justify-content-between align-items-center">
+                                                    <label for="houseOrderInput">Дім *</label>
+                                                    <input type="text" class="form-control" id="houseOrderInput">
+                                                </div>
+                                            </div>
+                                            <div class="form-group d-flex justify-content-between align-items-center">
+                                                <label for="dateOrderInput">Бажана дата доставки</label>
+                                                <input type="text" class="form-control" id="dateOrderInput">
+                                            </div>
+                                            <div class="form-group d-flex justify-content-between align-items-center">
+                                                <label for="timeOrderInput">Бажаний час доставки</label>
+                                                <input type="text" class="form-control" id="timeOrderInput">
+                                            </div>
+                                        </form>
+                                        <p>Доставка замовлення відбувається за допомогою сервісу <span>“Нова пошта”</span>.</p>
+                                        <span>Час доставки замовлення:</span>
+                                        <ul>
+                                            <li>• по Івано-Франківській області — <span>1 доба</span>,</li>
+                                            <li>• по території Україна — <span>1 - 3 доби</span>.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="newPostDepartmentOpen">
+                                        <form class="">
+                                            <div class="form-group select-style d-flex justify-content-between align-items-center">
+                                                <label for="nameOrderInput">Ваш регіон</label>
+                                                <select name="" id="">
+                                                    <option value="">Івано-Франківська область</option>
+                                                    <option value="">Івано-Франківськ</option>
+                                                    <option value="">Кривий ріг</option>
+                                                    <option value="">Харків</option>
+                                                    <option value="">Львів</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group select-style d-flex justify-content-between align-items-center">
+                                                <label for="nameOrderInput">Ваше місто</label>
+                                                <select name="" id="">
+                                                    <option value="">Коломия</option>
+                                                    <option value="">Івано-Франківськ</option>
+                                                    <option value="">Кривий ріг</option>
+                                                    <option value="">Харків</option>
+                                                    <option value="">Львів</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group select-style d-flex justify-content-between align-items-center">
+                                                <label for="nameOrderInput">Відділення</label>
+                                                <select name="" id="">
+                                                    <option value="">Відділення №1, вул. Максимовича б.8</option>
+                                                    <option value="">Івано-Франківськ</option>
+                                                    <option value="">Кривий ріг</option>
+                                                    <option value="">Харків</option>
+                                                    <option value="">Львів</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                        <p>Доставка замовлення відбувається за допомогою сервісу <span>“Нова пошта”</span>.</p>
+                                        <span>Час доставки замовлення:</span>
+                                        <ul>
+                                            <li>• по Івано-Франківській області — <span>1 доба</span>,</li>
+                                            <li>• по території Україна — <span>1 - 3 доби</span>.</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div id="newPostCourierOpen"></div>
-                                <div id="newPostDepartmentOpen"></div>
                             </div>
                             <div class="order-footer">
                                 <div class="order-input-group d-flex justify-content-between align-items-start">
-                                        <label>Спосіб оплати</label>
-                                        <div class="box-input-group">
-                                            <label class="label-radio-checkbox">
-                                                <input type="radio" name="payment">
-                                                <span class="checked-radio"></span>
-                                                <span>Готівкою</span>
-                                            </label>
-                                            <label class="label-radio-checkbox">
-                                                <input type="radio" name="payment">
-                                                <span class="checked-radio"></span>
-                                                <span>Кредитною карткою</span>
-                                            </label>
-                                        </div>
+                                    <label>Спосіб оплати</label>
+                                    <div class="box-input-group">
+                                        <label class="label-radio-checkbox">
+                                            <input type="radio" name="payment">
+                                            <span class="checked-radio"></span>
+                                            <span>Готівкою</span>
+                                        </label>
+                                        <label class="label-radio-checkbox">
+                                            <input type="radio" name="payment">
+                                            <span class="checked-radio"></span>
+                                            <span>Кредитною карткою</span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <p>На весь готовий продукт оплата здійснюється <span>наложеним платежом</span> (після отримання товару);</p>
-                                <p>На індивідуально створений товар - <span>предоплата в розмірі 40%</span> від суми замовлення.</p>
+                                <p>На весь готовий продукт оплата здійснюється <span>наложеним платежом</span> (після
+                                    отримання товару);</p>
+                                <p>На індивідуально створений товар - <span>предоплата в розмірі 40%</span> від суми
+                                    замовлення.</p>
                             </div>
                         </div>
                         <button type="submit" class="btn-checked-order">підтвердити ЗАМОВЛЕННЯ</button>
                     </div>
                     <div class="col-12 col-md-6 col-lg-5 d-none d-md-block">
-                        
+                        <div class="you-order-content">
+                            <h2>Ваші товари</h2>
+                            <div class="you-order">
+                                <div class="you-order-header d-flex align-items-start">
+                                    <div class="you-order-header__img">
+                                        <img src="image/image.png" alt="">
+                                    </div>
+                                    <div class="you-order-header__desc">
+                                        <h4>Деревяна флешка на 8 Гб</h4>
+                                        <p>Рух супутника періодично. Тангажу, наприклад, змушує інакше поглянути на те</p>
+                                    </div>
+                                </div>
+                                <div class="you-order-body">
+                                    <div class="you-order-body__info d-flex align-items-center justify-content-between">
+                                        <div class="you-order__color d-flex align-items-center">
+                                            Колір: <img src="image/new-pic/elipse.png" alt="">
+                                        </div>
+                                        <div class="you-order__price">
+                                            <p class="goods__price">260 <span>грн</span></p>
+                                        </div>
+                                        <div class="you-order__number">
+                                            <input type="number" min="0" max="100" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="you-order-body__img d-flex align-items-start">
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="you-order__canche-engraving">
+                                    <img src="icons/pen.svg" alt="pen">
+                                    <span>Редагувати гравіювання</span>
+                                </a>
+                                <span class="remove-you-order"></span>
+                            </div>
+                            <div class="you-order">
+                                <div class="you-order-header d-flex align-items-start">
+                                    <div class="you-order-header__img">
+                                        <img src="image/image.png" alt="">
+                                    </div>
+                                    <div class="you-order-header__desc">
+                                        <h4>Деревяна флешка на 8 Гб</h4>
+                                        <p>Рух супутника періодично. Тангажу, наприклад, змушує інакше поглянути на те</p>
+                                    </div>
+                                </div>
+                                <div class="you-order-body">
+                                    <div class="you-order-body__info d-flex align-items-center justify-content-between">
+                                        <div class="you-order__color d-flex align-items-center">
+                                            Колір: <img src="image/new-pic/elipse.png" alt="">
+                                        </div>
+                                        <div class="you-order__price">
+                                            <p class="goods__price">260 <span>грн</span></p>
+                                        </div>
+                                        <div class="you-order__number">
+                                            <input type="number" min="0" max="100" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="you-order-body__img d-flex align-items-start">
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                        <div class="image">
+                                            <img src="image/image-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="you-order__canche-engraving">
+                                    <img src="icons/pen.svg" alt="pen">
+                                    <span>Редагувати гравіювання</span>
+                                </a>
+                                <span class="remove-you-order"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -321,15 +518,16 @@
                         <span class="phone-hide">Розроблено студією <a href="#">FlyFox</a></span>
                         <span class="phone-show">© Дельва. 2008-2018.<br> Всі права захищені</span>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
