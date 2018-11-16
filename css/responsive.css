@@ -156,6 +156,9 @@
 }
 
 @media(max-width:1200.8px) {
+    .registration-sect {
+        width: 100%;
+    }
     
     .bottpr-slide.slick-center .picblock-prslider, .picblock-prslider {
         height: 200px;
@@ -182,6 +185,20 @@
 }
 
 @media(max-width:991.8px) {
+    .create-block {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+    .create-block a {
+        width: 100%;
+        height: 45px;
+    }
+    
+    .create-block .title {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
     .no-gar li {
         font-size: 14px;
     }
@@ -325,6 +342,17 @@
     }
 }
 @media(max-width:767.8px) {
+    .signforgpass {
+        right: initial;
+        left: 255px;
+    }
+    .create-block {
+        max-width: 380px;
+        margin-bottom: 20px;
+    }
+    .forgot-pass, .registration-sect {
+        padding-left: 0;
+    }
     .lefterr-block .title {
         font-size: 25px;
     }
@@ -467,6 +495,16 @@
 }
 
 @media(max-width:575.8px) {
+    #forgot-pass label, #registration label, #registration input[type="text"], #registration input[type="tel"], #registration input[type="password"], #registration input[type="email"] {
+        font-size: 14px;
+    }
+    #registration input[type="text"], #registration input[type="tel"], #registration input[type="password"], #registration input[type="email"] {
+        margin-bottom: 25px;
+    }
+    .btnsect-form span {
+        display: block;
+        margin-top: 10px;
+    }
     .error-sect {
         height: 300px;
         position: relative;
@@ -618,5 +656,11 @@
 @media(max-width:480px) {
     .error-sect {
         background-position: 57% 0%;
+    }
+}
+@media(max-width:415px) {
+    .signforgpass {
+        right: 0;
+        left: initial;
     }
 }

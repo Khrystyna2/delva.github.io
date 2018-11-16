@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // style select
     $(function () {
-        $('select, input[type="number"]').styler();
+        $('select, input[type="number"], .check-block input').styler();
     });
     // catalog top filter
     $('.catgrid-links span').click(function () {

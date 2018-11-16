@@ -2019,9 +2019,249 @@ h1 {
     padding-left: 10px;
     position: relative;
 }
+
 .no-gar li:before {
     content: "•";
-    position:  absolute;
+    position: absolute;
     left: 0;
     top: 2px;
+}
+
+.forgot-pass .title,
+.registration-sect .title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+#forgot-pass label,
+#registration label {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #000000;
+    display: block;
+}
+
+#forgot-pass input[type="email"] {
+    height: 46px;
+    width: 100%;
+    max-width: 380px;
+    background: #FFFFFF;
+    border: 1px solid #B8B8B8;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+#forgot-pass input[type="submit"],
+#registration input[type="submit"] {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 264px;
+    height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(107.67deg, #DB9D7E 0%, #A06243 100%);
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+#forgot-pass input[type="submit"]:hover {
+    background: #A06243;
+}
+
+.forgot-pass {
+    margin-bottom: 194px;
+    padding-left: 100px;
+}
+
+.registration-sect {
+    width: 905px;
+    padding-left: 100px;
+}
+
+#registration input[type="text"],
+#registration input[type="tel"],
+#registration input[type="password"],
+#registration input[type="email"] {
+    height: 46px;
+    width: 100%;
+    max-width: 380px;
+    background: #FFFFFF;
+    border: 1px solid #B8B8B8;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+.check-block label {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 17px;
+    color: #000000;
+    display: inline-block !important;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+
+.check-block .jq-checkbox {
+    box-shadow: none;
+    background: #fff;
+    border: 1px solid #8A4825;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.check-block .jq-checkbox.checked .jq-checkbox__div {
+    border: none;
+    background-image: url(../image/new-pic/check.png);
+    background-repeat: no-repeat;
+    transform: initial;
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.check-block {
+    margin-bottom: 20px;
+}
+
+.btnsect-form input {
+    margin-right: 35px;
+    vertical-align: middle;
+}
+
+.btnsect-form span {
+    display: inline-block;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 17px;
+    color: #000000;
+}
+
+.btnsect-form span a {
+    text-decoration-line: underline;
+    color: #8A4825;
+}
+
+.btnsect-form span a:hover {
+    text-decoration: none;
+}
+
+.btnsect-form {
+    margin-bottom: 45px;
+}
+
+.regsoc .title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.regsoc ul li {
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.regsoc ul li a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+}
+
+.regsoc ul li:first-child a {
+    background-image: url(../image/new-pic/fbicon.png);
+}
+
+.regsoc ul li:nth-child(2) a {
+    background-image: url(../image/new-pic/twicon.png);
+}
+
+.regsoc ul li:nth-child(3) a {
+    background-image: url(../image/new-pic/googicon.png);
+}
+
+.bottregsect {
+    margin-bottom: 80px;
+}
+
+#registration input[type="submit"]:hover {
+    background: #A06243;
+}
+
+.relblock {
+    position: relative;
+}
+
+.signforgpass {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 17px;
+    text-align: right;
+    color: #8A4825;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.signforgpass:hover {
+    text-decoration: underline;
+    color: #8A4825;
+}
+
+.registration-sect.signin {
+    width: 100%;
+}
+
+.create-block {
+    background: #F6F3F2;
+    width: 480px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-block .title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.create-block a {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 1px;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    width: 380px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
