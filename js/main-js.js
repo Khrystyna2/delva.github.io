@@ -130,7 +130,15 @@ $(document).ready(function() {
         }
         else if ($("#newPostDepartment").is(":checked"))
           $('#newPostDepartmentOpen').show();
-      });   
-    
+      });  
+
 });
 
+function showPassword() {
+  var x = document.getElementById("passwordPersonalInfo");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
