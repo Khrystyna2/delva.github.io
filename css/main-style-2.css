@@ -2265,3 +2265,112 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+.sort-filter .jq-selectbox ul,
+.right-prinfo .jq-selectbox ul {
+    padding: 15px 20px;
+}
+
+.sort-filter .jq-selectbox li.selected,
+.sort-filter .jq-selectbox li,
+.right-prinfo .jq-selectbox li.selected,
+.right-prinfo .jq-selectbox li {
+    background-color: transparent;
+    color: #929292;
+}
+
+.sort-filter .jq-selectbox li,
+.right-prinfo .jq-selectbox li {
+    margin-bottom: 10px;
+    position: relative;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.sort-filter .jq-selectbox li:last-child,
+.right-prinfo .jq-selectbox li:last-child {
+    margin-bottom: 0;
+}
+
+#catalog-topfilter-styler .jq-selectbox__dropdown ul li:hover,
+.jq-selectbox__dropdown ul li:hover,
+.right-prinfo .jq-selectbox__dropdown ul li:hover,
+.right-prinfo .jq-selectbox__dropdown ul li:hover {
+    background-color: transparent;
+    color: #A06243;
+}
+
+.sort-filter .jq-selectbox li:before,
+.right-prinfo .jq-selectbox li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sort-filter .jq-selectbox__dropdown,
+.right-prinfo .jq-selectbox__dropdown {
+    top: 36px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: none;
+}
+
+/* --------- */
+.colorsel {
+    position: relative;
+}
+.colorsel .select-color {
+    width: 90px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #B8B8B8;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding-right: 20px;
+    background-image: url(../image/new-pic/select-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 85% 52%;
+    cursor: pointer;
+}
+
+.choose-colors-block {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 90px;
+    padding: 12px 0 10px 0;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    display: none;
+}
+.choose-colors-block > span {
+    display: block;
+    padding-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.choose-colors-block > span:last-child {
+    margin-bottom: 0;
+}
+.product-descr .right-descr {
+    margin-bottom: 20px;
+}
+.picblock-prslider {
+    opacity: .5;
+}
+.bottpr-slide.slick-center .picblock-prslider {
+    opacity: 1;
+}
