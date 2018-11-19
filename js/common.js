@@ -1,8 +1,20 @@
 $(document).ready(function () {
     // style select
     $(function () {
-        $('select, input[type="number"]').styler();
+        $('select, input[type="number"], .check-block input').styler();
     });
+
+    $('.colorsel .select-color').click(function () {
+        $('.choose-colors-block').toggle();
+    });
+    $(".choose-colors-block span").click(function() {
+        var title = $(this).find(".titlesel").html();
+        $(".colorsel .select-color").html(title);
+        $('.choose-colors-block').hide();
+
+    });
+
+
     // catalog top filter
     $('.catgrid-links span').click(function () {
         $('.catgrid-links span').removeClass('active');
@@ -54,7 +66,7 @@ $(document).ready(function () {
     $('.card-slider').slick({
         arrows: false,
         infinite: true,
-        dots:true,
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
@@ -67,11 +79,11 @@ $(document).ready(function () {
             }
         ]
     });
-    
+
     $('.bottom-prslider').slick({
         arrows: true,
         infinite: true,
-        dots:false,
+        dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
