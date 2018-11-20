@@ -1483,6 +1483,195 @@ body {
   width: 135px;
 }
 
+.my-order-wrapper {
+  width: 100%;
+  padding: 30px 48px;
+  border: 1px solid #EBEBEB;
+}
+
+.my-order {
+  margin-bottom: 30px;
+}
+
+.my-order:last-of-type {
+  margin-bottom: 0;
+}
+
+.my-order-header {
+  border: 1px solid #B8B8B8;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  padding-left: 21px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  font-size: 15px;
+  line-height: 18px;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  position: relative;
+  cursor: pointer;
+}
+
+.my-order-header::after {
+  content: '';
+  border-left: 1px solid #B8B8B8;
+  position: absolute;
+  top: 0;
+  right: 23%;
+  height: 100%;
+}
+
+.my-order__number {
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+  color: #8A4825;
+  width: 23%;
+}
+
+.my-order__number .arrow {
+  margin-right: 9px;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+.my-order__number .small-img {
+  width: 28px;
+  margin-left: 10px;
+}
+
+.my-order-date {
+  width: 24%;
+}
+
+.my-order-price {
+  width: 30%;
+  text-align: center;
+  padding: 0 14px;
+}
+
+.my-order-status {
+  width: 23%;
+  padding-left: 20px;
+}
+
+.my-order-status .done {
+  color: #0EAF00;
+}
+
+.my-order-status .rejected {
+  color: #FF0000;
+}
+
+.my-order-body {
+  border: 1px solid #EBEBEB;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  padding: 30px 0;
+}
+
+.my-order-body__desc {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.my-order-body__desc_img {
+  width: 62px;
+  height: auto;
+  margin-right: 35px;
+}
+
+.my-order-body__desc_info > h4 {
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.my-order-body__desc_info > p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #838383;
+  margin-bottom: 12px;
+  width: 50%;
+}
+
+.my-order__color > img {
+  margin-left: 6px;
+}
+
+.my-order-body__desc_info-img {
+  margin-top: 20px;
+}
+
+.my-order-body__desc_info-img .image {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #EBEBEB;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-order-body__desc_info-img .image > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.my-order-body__info {
+  padding-top: 30px;
+  padding-left: 21px;
+  border-top: 1px solid #EBEBEB;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.my-order-body__info > ul li {
+  margin-bottom: 15px;
+}
+
+.my-order-body__info > ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.my-order-body__info > ul li > span {
+  font-weight: 300;
+}
+
+.my-order-wrapper .my-order > .my-order-body {
+  display: none;
+}
+
+/* .my-order-wrapper .my-order:first-of-type > .my-order-body {
+  display: block;
+} */
+
+.my-order__number.open-my-order .arrow{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+} 
+
+.my-order__number.open-my-order .small-img {
+  display: none;
+}
+
+
 @media only screen and (max-width: 1400px) {
   .slider-index-page .slick-next.slick-arrow {
     right: -60px;
@@ -1496,6 +1685,34 @@ body {
     width: 60px;
     height: 60px;
   }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1200px) {
+  .my-order-wrapper {
+    padding: 24px 20px;
+  }
+
+  .my-order-header {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .my-order__number .small-img {
+    width: 24px;
+    margin-left: 6px;
+  }
+
+  .my-order-date {
+    width: 25%;
+  }
+  .my-order-status {
+    width: 22%;
+  }
+
+  .my-order-header::after {
+    right: 21%;
+  }
+
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1734,6 +1951,18 @@ body {
 
 .personal-info__form .wrapper-form-group .form-group:first-of-type {
   width: 296px;
+}
+
+.my-order-wrapper {
+  padding: 22px 20px;
+}
+
+.my-order-header {
+  padding-left: 14px;
+}
+
+.my-order-header::after {
+  right: 22%;
 }
 
 }

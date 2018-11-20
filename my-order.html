@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Дельва</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style slick -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- style inputs and select -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/main-style-2.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-sm-4 col-md-2">
+                    <a href="index.html" class="logo">
+                        <img src="image/logo.svg" alt="Дельва">
+                    </a>
+                </div>
+                <div class="col-md-3 col-lg-3 offset-lg-1 col-xl-2 offset-xl-2 d-none d-md-block">
+                    <div class="us-email">
+                        <span>delva.workshop@ukr.net</span>
+                        <a href="#"><span>Ми в</span> Instagram</a>
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="phone">
+                        <a href="tel: +38 (098) 534-33-22">+38 (098) 534-33-22</a>
+                        <a href="#" class="callback" data-toggle="modal" data-target="#feedbackModal">Зворотній дзвінок</a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="feedbackModalLabel">Залишіть ваші контакти і ми вам
+                                        заталефонуємо</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="nameInput">Ім’я</label>
+                                            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp"
+                                                placeholder="Як вас звати?">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phoneInput">Телефон</label>
+                                            <input type="text" class="form-control" id="phoneInput" placeholder="Введіть номер телефону">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="textTextarea">Повідомлення</label>
+                                            <textarea name="" cols="20" rows="5" id="textTextarea" class="form-control"
+                                                placeholder="Залишіть декілька слів про ваше питання або проблему"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn-feedbackModal">Відправити повідомлення</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-8 col-md-4 col-lg-3">
+                    <div class="group-icon d-flex justify-content-end align-items-center">
+                        <a href="#" class="user d-flex align-items-center">
+                            <span>Вхід</span>
+                            <img src="icons/user.svg" alt="user">
+                        </a>
+                        <a href="liked.html" class="liked-goods">
+                            <img src="icons/heart.svg" alt="heart">
+                        </a>
+                        <a href="korzyna.html" id="basket">
+                            <span id="counter" class="d-flex align-items-center justify-content-center">2</span>
+                            <img src="icons/shopping-basket.svg" alt="basket">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-menu d-flex justify-content-between align-items-center">
+                            <div class="btn-menu">
+                                <img src="icons/menu.svg" alt="menu">
+                            </div>
+                            <nav class="menu">
+                                <div class="btn-close">
+                                    <img src="icons/close.svg" alt="close">
+                                </div>
+                                <ul class="d-flex">
+                                    <li id="menu-dropDown">
+                                        <div><img src="icons/menu.svg" alt="menu">товари</div>
+                                        <ul class="hide-list">
+                                            <li><a href="catalog.html">Флеш-память</a></li>
+                                            <li><a href="product.html">Футляри</a></li>
+                                            <li><a href="product-not-available.html">Шкатулки</a></li>
+                                            <li><a href="#">Флеш-память</a></li>
+                                            <li><a href="#">Футляри</a></li>
+                                            <li><a href="#">Шкатулки</a></li>
+                                            <li><a href="#">Власне гравіювання <img src="icons/art.svg" alt=""></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Конструктор</a></li>
+                                    <li><a href="delivery.html">Доставка і оплата</a></li>
+                                    <li><a href="news.html">Новини</a></li>
+                                    <li><a href="contacts.html">Контакти</a></li>
+                                    <!-- this for mobil screen -->
+                                    <div id="phoneMob" class="phone">
+                                        <a href="tel: +38 (098) 534-33-22">+38 (098) 534-33-22</a>
+                                        <a href="#" class="callback">Зворотній дзвінок</a>
+                                    </div>
+                                    <div id="our-emailMob" class="us-email">
+                                        <span>delva.workshop@ukr.net</span>
+                                        <a href="#"><span>Ми в</span> Instagram</a>
+                                    </div>
+                                    <div id="languageMob" class="language">
+                                        <a href="#">Укр</a>
+                                        <a href="#">Рус</a>
+                                    </div>
+                                    <a href="#" id="own-design">Власне гравіювання <img src="icons/art.svg" alt=""></a>
+                                    <!-- this for mobil screen -->
+                                </ul>
+                            </nav>
+                            <div id="search">
+                                <input type="search" placeholder="Пошук ...">
+                                <button type="button"><img src="icons/search.svg" alt="search"></button>
+                            </div>
+                            <div class="language">
+                                <a href="#">Укр</a>
+                                <a href="#">Рус</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li>Особистий кабінет</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="personal-office">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="personal-office__title">особистий кабінет</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <nav class="nav flex-column">
+                            <a href="#" class="nav-link">Інформація профіля</a>
+                            <a href="#" class="nav-link active">Мої замовлення</a>
+                            <a href="#" class="nav-link color-gray">Вихід <img src="icons/logout.svg" alt="logout"></a>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9 col-xl-8 offset-xl-1">
+                        <div class="my-order-wrapper">
+                            <div class="my-order">
+                                <div class="my-order-header d-flex">
+                                    <div class="my-order__number d-flex">
+                                        <img src="icons/arrow-down-brown.svg" alt="arrow" class="arrow">
+                                        <span>№ 387631</span>
+                                        <img src="image/image.png" alt="" class="small-img">
+                                    </div>
+                                    <div class="my-order-date">
+                                        12 квітня 2018 13:32
+                                    </div>
+                                    <div class="my-order-price">
+                                        1 товар, 4 489 грн
+                                    </div>
+                                    <div class="my-order-status">
+                                        <span class="done">Виконано</span>
+                                    </div>
+                                </div>
+                                <div class="my-order-body">
+                                    <div class="my-order-body__desc d-flex align-items-start">
+                                        <img src="image/image.png" alt="" class="my-order-body__desc_img">
+                                        <div class="my-order-body__desc_info">
+                                            <h4>Деревяна флешка на 8 Гб</h4>
+                                            <p>Виготовлена з червогоно дуба та кращого виробника флеш-памяті</p>
+                                            <div class="my-order__color d-flex align-items-center">
+                                                Колір: <img src="image/new-pic/elipse.png" alt="">
+                                            </div>
+                                            <div class="my-order-body__desc_info-img d-flex align-items-start">
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-order-body__info">
+                                        <ul>
+                                            <li><span>Спосіб оплати:</span> Готівкова</li>
+                                            <li><span>Спосіб доставки:</span> Кур'єр Нова Пошта</li>
+                                            <li><span>Ім'я та прізвище:</span> Костів Микола Антонович</li>
+                                            <li><span>Телефон:</span> +380 (95) 232-14-62</li>
+                                            <li><span>Адреса:</span> Івано-Франківськ, Івано-Франківська обл., вул.
+                                                Мазепи, д.7 кв.13</li>
+                                            <li><span>Номер ТТН:</span> 20200092613732110</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-order">
+                                <div class="my-order-header d-flex">
+                                    <div class="my-order__number d-flex">
+                                        <img src="icons/arrow-down-brown.svg" alt="arrow" class="arrow">
+                                        <span>№ 387631</span>
+                                        <img src="image/image.png" alt="" class="small-img">
+                                    </div>
+                                    <div class="my-order-date">
+                                        12 квітня 2018 13:32
+                                    </div>
+                                    <div class="my-order-price">
+                                        1 товар, 4 489 грн
+                                    </div>
+                                    <div class="my-order-status">
+                                        <span class="rejected">Відмінено</span>
+                                    </div>
+                                </div>
+                                <div class="my-order-body">
+                                    <div class="my-order-body__desc d-flex align-items-start">
+                                        <img src="image/image.png" alt="" class="my-order-body__desc_img">
+                                        <div class="my-order-body__desc_info">
+                                            <h4>Деревяна флешка на 8 Гб</h4>
+                                            <p>Виготовлена з червогоно дуба та кращого виробника флеш-памяті</p>
+                                            <div class="my-order__color d-flex align-items-center">
+                                                Колір: <img src="image/new-pic/elipse.png" alt="">
+                                            </div>
+                                            <div class="my-order-body__desc_info-img d-flex align-items-start">
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-order-body__info">
+                                        <ul>
+                                            <li><span>Спосіб оплати:</span> Готівкова</li>
+                                            <li><span>Спосіб доставки:</span> Кур'єр Нова Пошта</li>
+                                            <li><span>Ім'я та прізвище:</span> Костів Микола Антонович</li>
+                                            <li><span>Телефон:</span> +380 (95) 232-14-62</li>
+                                            <li><span>Адреса:</span> Івано-Франківськ, Івано-Франківська обл., вул.
+                                                Мазепи, д.7 кв.13</li>
+                                            <li><span>Номер ТТН:</span> 20200092613732110</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-order">
+                                <div class="my-order-header d-flex">
+                                    <div class="my-order__number d-flex">
+                                        <img src="icons/arrow-down-brown.svg" alt="arrow" class="arrow">
+                                        <span>№ 387631</span>
+                                        <img src="image/image.png" alt="" class="small-img">
+                                    </div>
+                                    <div class="my-order-date">
+                                        12 квітня 2018 13:32
+                                    </div>
+                                    <div class="my-order-price">
+                                        1 товар, 4 489 грн
+                                    </div>
+                                    <div class="my-order-status">
+                                        <span class="rejected">Відмінено</span>
+                                    </div>
+                                </div>
+                                <div class="my-order-body">
+                                    <div class="my-order-body__desc d-flex align-items-start">
+                                        <img src="image/image.png" alt="" class="my-order-body__desc_img">
+                                        <div class="my-order-body__desc_info">
+                                            <h4>Деревяна флешка на 8 Гб</h4>
+                                            <p>Виготовлена з червогоно дуба та кращого виробника флеш-памяті</p>
+                                            <div class="my-order__color d-flex align-items-center">
+                                                Колір: <img src="image/new-pic/elipse.png" alt="">
+                                            </div>
+                                            <div class="my-order-body__desc_info-img d-flex align-items-start">
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-order-body__info">
+                                        <ul>
+                                            <li><span>Спосіб оплати:</span> Готівкова</li>
+                                            <li><span>Спосіб доставки:</span> Кур'єр Нова Пошта</li>
+                                            <li><span>Ім'я та прізвище:</span> Костів Микола Антонович</li>
+                                            <li><span>Телефон:</span> +380 (95) 232-14-62</li>
+                                            <li><span>Адреса:</span> Івано-Франківськ, Івано-Франківська обл., вул.
+                                                Мазепи, д.7 кв.13</li>
+                                            <li><span>Номер ТТН:</span> 20200092613732110</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-order">
+                                <div class="my-order-header d-flex">
+                                    <div class="my-order__number d-flex">
+                                        <img src="icons/arrow-down-brown.svg" alt="arrow" class="arrow">
+                                        <span>№ 387631</span>
+                                        <img src="image/image.png" alt="" class="small-img">
+                                    </div>
+                                    <div class="my-order-date">
+                                        12 квітня 2018 13:32
+                                    </div>
+                                    <div class="my-order-price">
+                                        1 товар, 4 489 грн
+                                    </div>
+                                    <div class="my-order-status">
+                                        <span class="rejected">Відмінено</span>
+                                    </div>
+                                </div>
+                                <div class="my-order-body">
+                                    <div class="my-order-body__desc d-flex align-items-start">
+                                        <img src="image/image.png" alt="" class="my-order-body__desc_img">
+                                        <div class="my-order-body__desc_info">
+                                            <h4>Деревяна флешка на 8 Гб</h4>
+                                            <p>Виготовлена з червогоно дуба та кращого виробника флеш-памяті</p>
+                                            <div class="my-order__color d-flex align-items-center">
+                                                Колір: <img src="image/new-pic/elipse.png" alt="">
+                                            </div>
+                                            <div class="my-order-body__desc_info-img d-flex align-items-start">
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                                <div class="image">
+                                                    <img src="image/image-2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-order-body__info">
+                                        <ul>
+                                            <li><span>Спосіб оплати:</span> Готівкова</li>
+                                            <li><span>Спосіб доставки:</span> Кур'єр Нова Пошта</li>
+                                            <li><span>Ім'я та прізвище:</span> Костів Микола Антонович</li>
+                                            <li><span>Телефон:</span> +380 (95) 232-14-62</li>
+                                            <li><span>Адреса:</span> Івано-Франківськ, Івано-Франківська обл., вул.
+                                                Мазепи, д.7 кв.13</li>
+                                            <li><span>Номер ТТН:</span> 20200092613732110</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="topfooter-sect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-lg-6">
+                        <div class="left-footblock">
+                            <a href="index.html" class="foot-logo"><img src="image/logo.svg" alt=""></a>
+                            <p>
+                                Завдяки старанням нашого обслуговуючого інженера ми маємо можливість потішити вас
+                                неймовірною якістю гравіювання. Ще більше деталей відображених в деревині!!!
+                                Переконайтесь
+                                в цьому замовивши та оплативши продукцію до 7 вересня включно ...
+                            </p>
+                            <div class="foot-social">
+                                <a href="#"><img src="image/new-pic/footpic1.png" alt=""></a>
+                                <a href="#"><img src="image/new-pic/footpic2.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md col-lg-3 col-sm-6">
+                        <div class="foot-sitemap">
+                            <p class="title">КАРТА САЙТУ <img src="image/new-pic/foot-arrow.png" alt=""></p>
+                            <ul>
+                                <li><a href="#">Головна</a></li>
+                                <li><a href="about-us.html">Про нас</a></li>
+                                <li><a href="#">Доставка і оплата</a></li>
+                                <li><a href="new-page.html">Новини</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md col-lg-3 col-sm-6">
+                        <div class="foot-contact">
+                            <p class="title">наші контакти</p>
+                            <ul>
+                                <li>м. Коломиї, вулиця Миру 47, офіс 3</li>
+                                <li><a href="tel:+380985343322">+38 (098) 534-33-22</a></li>
+                                <li><a href="mailto:delva.workshop@ukr.net">delva.workshop@ukr.net</a></li>
+                            </ul>
+                            <div class="foot-soc">
+                                <a href="#"><img src="image/new-pic/inst-icon-foot.png" alt=""></a>
+                                <a href="#"><img src="image/new-pic/fb-icon-foot.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="bottfooter-sect">
+                    <div class="foot-social showphone">
+                        <a href="#"><img src="image/new-pic/footpic1.png" alt=""></a>
+                        <a href="#"><img src="image/new-pic/footpic2.png" alt=""></a>
+                    </div>
+                    <div class="col-md-4 col-sm-12 phone-hide"><span>© Дельва. 2008-2018. Всі права захищені</span></div>
+                    <div class="col-md-8 col-sm-12">
+                        <span class="phone-show">Розроблено студією <a href="#">FlyFox</a></span>
+                        <span><a href="#">Гарантії та повернення</a></span>
+                        <span><a href="#">Політика конфіденційності</a></span>
+                        <span class="phone-hide">Розроблено студією <a href="#">FlyFox</a></span>
+                        <span class="phone-show">© Дельва. 2008-2018.<br> Всі права захищені</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main-js.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

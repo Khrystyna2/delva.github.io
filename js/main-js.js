@@ -134,11 +134,17 @@ $(document).ready(function() {
 
 
       $('.showPassword').on('click', function() {
-        var $inp = $(this).prev('input');  
-        $inp.attr('type') === 'password' ? 
-          $inp.attr('type', 'text') 
-        : $inp.attr('type', 'password')
+        var inp = $(this).prev('input');  
+        inp.attr('type') === 'password' ? 
+          inp.attr('type', 'text') 
+        : inp.attr('type', 'password')
         $(this).toggleClass('active');
+      });
+
+      $('.my-order-header').click(function() {
+        let findClass = $(this).next('.my-order-body');
+        findClass.slideToggle();
+        $(this).children('.my-order__number').toggleClass('open-my-order');
       });
 
 });
