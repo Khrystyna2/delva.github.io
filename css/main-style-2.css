@@ -2374,3 +2374,6 @@ h1 {
 .bottpr-slide.slick-center .picblock-prslider {
     opacity: 1;
 }
+.product-descr .bott-block input[type="submit"]:hover {
+    background: #A06243;
+}
