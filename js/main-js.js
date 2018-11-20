@@ -132,13 +132,13 @@ $(document).ready(function() {
           $('#newPostDepartmentOpen').show();
       });  
 
-});
 
-function showPassword() {
-  var x = document.getElementById("passwordPersonalInfo");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
+      $('.showPassword').on('click', function() {
+        var $inp = $(this).prev('input');  
+        $inp.attr('type') === 'password' ? 
+          $inp.attr('type', 'text') 
+        : $inp.attr('type', 'password')
+        $(this).toggleClass('active');
+      });
+
+});

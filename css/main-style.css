@@ -771,10 +771,6 @@ body {
   height: 472px;
 }
 
-/* .proper-engraving__big-img > img{
-  width: 100%;
-} */
-
 /*section order */
 .order {
   padding-bottom: 78px;
@@ -841,8 +837,6 @@ body {
   bottom: -40px;
 }
 
-
-
 /*style for button way to delivery*/
 #wayDelivery {
   width: 380px;
@@ -901,7 +895,6 @@ body {
 }
 
 /*the end style for button way to delivery*/
-
 
 .order-input-group {
   margin-bottom: 11px;
@@ -1376,6 +1369,16 @@ body {
   border-top: 1px solid #C4C4C4;
   display: flex;
   align-items: center;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.color-gray:hover {
+  background-color: #C4C4C4;
+  color: #000;  
 }
 
 .color-gray > img {
@@ -1399,6 +1402,10 @@ body {
   position: relative;
 }
 
+.personal-info__form .wrapper-form-group .form-group {
+  margin-bottom: 0;
+}
+
 .personal-info__form .form-group .form-control {
   width: 380px;
   height: 46px;
@@ -1416,6 +1423,10 @@ body {
   top: 50%;
   margin-top: -12px;
   cursor: pointer;
+}
+
+.showPassword.active > svg{
+  fill: #929292;
 }
 
 .personal-info__form .wrapper-form-group .form-group .form-control {
@@ -1460,6 +1471,16 @@ body {
 
 .border-red > form {
   border: 1px solid #FF0000;
+}
+
+#passwordPersonalInfo,
+#newPasswordPersonalInfo,
+#confirmPasswordPersonalInfo {
+  padding-right: 55px;
+}
+
+.personal-info__form .form-group > label {
+  width: 135px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1697,6 +1718,24 @@ body {
     margin-left: -30px;
   }
 
+  .personal-office__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .personal-office-info {
+    width: 100%;
+}
+
+.personal-info__form .form-group .form-control,
+.personal-info__form .select-style .jq-selectbox {
+  width: 350px;
+}
+
+.personal-info__form .wrapper-form-group .form-group:first-of-type {
+  width: 296px;
+}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -1889,6 +1928,32 @@ body {
   .order-button-group, .order-form .form-group, .order-input-group, #newPostCourierOpen .form-group, #newPostDepartmentOpen .form-group {
     font-size: 16px;
   }
+
+  .personal-office-info > form {
+    padding: 20px 25px;
+    font-size: 14px;
+}
+
+.personal-info__form .form-group .form-control,
+.personal-info__form .select-style .jq-selectbox {
+  width: 290px;
+}
+
+.personal-info__form .wrapper-form-group .form-group .form-control {
+  width: 110px;
+}
+
+.personal-info__form .wrapper-form-group .form-group:first-of-type {
+  width: 218px;
+}
+
+.personal-info__form .wrapper-form-group .form-group:last-of-type {
+  width: 150px;
+}
+
+.personal-info__form .form-group > label {
+  width: 106px;
+}
 
 }
 
@@ -2174,6 +2239,30 @@ body {
     padding-bottom: 12px;
   }
 
+  .personal-office__title {
+    font-size: 22px;
+    line-height: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+  }
+
+  .personal-office-info > form {
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+.personal-info__form .form-group .form-control, .personal-info__form .select-style .jq-selectbox {
+  width: 310px;
+}
+
+.personal-info__form .wrapper-form-group .form-group:first-of-type {
+  width: 256px;
+}
+
+.personal-info__form .form-group > label {
+  width: 135px;
+}
+
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -2217,6 +2306,36 @@ body {
   .btn-create-engraving > img {
     margin-left: 8px;
   }
+
+  .personal-info__form .form-group {
+    margin-bottom: 25px;
+    -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+    align-items: flex-start !important;
+}
+
+.personal-info__form .form-group > label {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.personal-info__form .form-group .form-control, .personal-info__form .select-style .jq-selectbox {
+  width: 100%;
+}
+.personal-info__form .wrapper-form-group .form-group .form-control,
+.personal-info__form .wrapper-form-group .form-group:first-of-type,
+.personal-info__form .wrapper-form-group .form-group:last-of-type {
+  width: 140px;
+}
+
+.showPassword {
+  top: 39px;
+  margin-top: 0;;
+}
+
+
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -2361,7 +2480,9 @@ body {
   }
 
   #wayDelivery {
-    flex-flow: column;
+    -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
     height: 54px;
     margin-bottom: 20px;
   }
@@ -2373,6 +2494,24 @@ body {
   #newPostCourierOpen .wrapper-form-group .form-group .form-control {
     width: 114px;
   }
+
+  .btn-personal-info {
+    width: 100%;
+  }
+
+  .personal-office__title {
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+
+  .personal-info__form .wrapper-form-group .form-group .form-control,
+  .personal-info__form .wrapper-form-group .form-group:first-of-type,
+  .personal-info__form .wrapper-form-group .form-group:last-of-type {
+    width: 110px;
+  }
+
 }
 
 @media only screen and (min-width: 1301px) {
