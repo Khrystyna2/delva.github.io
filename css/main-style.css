@@ -2314,12 +2314,15 @@ body {
     height: 100%;
     overflow-y: scroll;
     padding: 30px 0;
+    position: relative;
+    z-index: 101;
   }
 
   .menu > ul > li {
     margin-bottom: 20px;
     padding-left: 29px;
     font-size: 17px;
+    width: 100%;
   }
 
   .menu > ul > li::before {
@@ -2552,6 +2555,37 @@ body {
   .my-order-body__info > ul li > span {
     display: block;
     margin-bottom: 4px;
+  }
+
+    /* modal window */
+  .modal-dialog {
+    max-width: 450px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .modal-content {
+    padding: 30px 35px;
+  }
+
+  .modal-body {
+    margin-top: 25px;
+  }
+
+  .modal-body .form-group {
+    margin-bottom: 25px;
+  }
+
+  .modal-body .form-group > label {
+    font-size: 14px;
+  }
+
+  .btn-feedbackModal {
+    width: 100%;
   }
 
 }
@@ -2798,6 +2832,37 @@ body {
     padding-left: 24px;
   }
 
+  /* modal window */
+  .modal-dialog {
+    max-width: 95%;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .modal-header .close {
+    display: block;
+  }
+  
+  .modal-content {
+    padding: 20px 24px;
+  }
+  
+  .modal-body {
+    margin-top: 20px;
+  }
+  
+  .modal-body .form-group {
+    margin-bottom: 20x;
+  }
+  
+  .modal-body .form-group > label {
+    font-size: 16px;
+    padding-bottom: 6px;
+  }
+  
 }
 
 @media only screen and (max-width: 425px) {
