@@ -2405,3 +2405,6 @@ h1 {
 footer .foot-sitemap ul li a, footer .foot-contact ul li a, footer .foot-contact ul li {
     display: block;
 }
+.color-gray > img {
+    height: 12px;
+}
