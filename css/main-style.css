@@ -803,6 +803,13 @@ body {
   margin-bottom: 35px;
 }
 
+.form-control:focus {
+  border-color: #ced4da;
+  outline: 0;
+  box-shadow: none;
+  color: #929292;
+}
+
 .order-form .form-group .form-control {
   width: 380px;
   height: 46px;
