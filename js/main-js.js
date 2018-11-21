@@ -22,10 +22,12 @@ $(document).ready(function() {
     //menu on mobile screen
     $('.btn-menu').click(function() {
        $('.menu').addClass('show-menu');
+       $('body').css('overflow', 'hidden');
     });
 
     $('.btn-close').click(function() {
         $('.menu').removeClass('show-menu');
+       $('body').css('overflow', 'visible');
     });
 
     $('.slider-header').slick({
