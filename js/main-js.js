@@ -108,6 +108,43 @@ $(document).ready(function() {
         ]
       });
 
-    
-});
+      $('#selfCheckout').on('click', function() {
+        $('#newPostOpen').hide();
+        $('#selfCheckoutOpen').show();
+      });
 
+      $('#newPost').on('click', function() {
+        $('#selfCheckoutOpen').hide();
+        $('#newPostOpen').show();
+      });
+
+      //show form new post
+      if ($("#newPostCourier, #newPostDepartment").is(":checked")) {
+        $('#newPostCourierOpen, #newPostDepartment').show();
+      }
+
+      $("#newPostDepartment, #newPostCourier").change(function () {
+        $('#newPostDepartmentOpen, #newPostCourierOpen').hide();
+        if ($("#newPostCourier").is(":checked")) {
+          $('#newPostCourierOpen').show();
+        }
+        else if ($("#newPostDepartment").is(":checked"))
+          $('#newPostDepartmentOpen').show();
+      });  
+
+
+      $('.showPassword').on('click', function() {
+        var inp = $(this).prev('input');  
+        inp.attr('type') === 'password' ? 
+          inp.attr('type', 'text') 
+        : inp.attr('type', 'password')
+        $(this).toggleClass('active');
+      });
+
+      $('.my-order-header').click(function() {
+        let findClass = $(this).next('.my-order-body');
+        findClass.slideToggle();
+        $(this).children('.my-order__number').toggleClass('open-my-order');
+      });
+
+});
