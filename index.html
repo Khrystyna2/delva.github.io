@@ -124,7 +124,7 @@
                                     <!-- this for mobil screen -->
                                     <div id="phoneMob" class="phone">
                                         <a href="tel: +38 (098) 534-33-22">+38 (098) 534-33-22</a>
-                                        <a href="#" class="callback">Зворотній дзвінок</a>
+                                        <a href="#" class="callback" data-toggle="modal" data-target="#feedbackModal1">Зворотній дзвінок</a>
                                     </div>
                                     <div id="our-emailMob" class="us-email">
                                         <span>delva.workshop@ukr.net</span>
@@ -135,6 +135,36 @@
                                         <a href="#">Рус</a>
                                     </div>
                                     <a href="#" id="own-design">Власне гравіювання <img src="icons/art.svg" alt=""></a>
+                                    <!-- modal -->
+                                    <div class="modal fade" id="feedbackModal1" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="feedbackModalLabel1">Залишіть ваші контакти і ми вам заталефонуємо</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="nameInput">Ім’я</label>
+                                                            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Як вас звати?">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="phoneInput">Телефон</label>
+                                                            <input type="text" class="form-control" id="phoneInput" placeholder="Введіть номер телефону">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="textTextarea">Повідомлення</label>
+                                                            <textarea name="" cols="20" rows="5" id="textTextarea" class="form-control" placeholder="Залишіть декілька слів про ваше питання або проблему"></textarea>
+                                                        </div>
+                                                        <button type="submit" class="btn-feedbackModal">Відправити повідомлення</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <!-- this for mobil screen -->
                                 </ul>
                             </nav>
