@@ -1582,8 +1582,8 @@ h1 {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
-    border: 1px solid #000000;
+    /* color: #000000; */
+    /* border: 1px solid #000000; */
     box-sizing: border-box;
     border-radius: 1px;
     width: 280px;
@@ -1591,6 +1591,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: -webkit-linear-gradient( right, #DB9D7E, #A06243);
+    background: -o-linear-gradient( right, #DB9D7E, #A06243);
+    background: linear-gradient(to right, #DB9D7E, #A06243);
+    color: #fff;
+}
+
+.order-processing .continue-shopping:hover {
+    background: #A06243;
 }
 
 .order-processing input[type="submit"] {
@@ -2387,7 +2395,7 @@ h1 {
     -ms-transition: .4s ease;
     -o-transition: .4s ease;
 }
-.product-descr .bottlink:hover, .order-processing .continue-shopping:hover {
+.product-descr .bottlink:hover {
     box-shadow: 0px 3px 10px #d8d8d8;
     transition: .4s ease;
     -webkit-transition: .4s ease;
