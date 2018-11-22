@@ -632,10 +632,19 @@ footer .left-footblock .foot-social a {
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 footer .left-footblock .foot-social a:last-child {
     margin-right: 0;
+}
+
+footer .left-footblock .foot-social a:hover {
+    opacity: 0.7;
 }
 
 .topfooter-sect {
@@ -690,6 +699,15 @@ footer .foot-soc a {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+footer .foot-soc a:hover {
+    opacity: 0.7;
 }
 
 footer .bottfooter-sect span {
@@ -2194,6 +2212,15 @@ h1 {
     display: inline-block;
     width: 45px;
     height: 45px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.regsoc ul li a:hover {
+    opacity: 0.7;
 }
 
 .regsoc ul li:first-child a {
